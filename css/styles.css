@@ -152,7 +152,7 @@ button:active {
 
 header {
   position: sticky;
-  top: none;
+  top: 0px;
   background-color: var(--background-color-opacity);
 }
 
@@ -161,7 +161,7 @@ main ul {
   margin: 5px auto;
   text-align: center;
   list-style-type: none;
-  padding-left: none;
+  padding-left: 0px;
 }
 
 .about {
@@ -268,11 +268,11 @@ input[type=submit] {
 
 @keyframes block-slide {
   from {
-    transform: translate(none, none);
+    transform: translate(0px, 0px);
   }
 
   to {
-    transform: translate(none, 748px);
+    transform: translate(0px, 748px);
   }
 }
 

@@ -169,7 +169,7 @@ button:active {
 
 header {
   position: sticky;
-  top: none;
+  top: 0px;
   background-color: var(--background-color-opacity);
 }
 
@@ -178,7 +178,7 @@ main ul {
   margin: 5px auto;
   text-align: center;
   list-style-type: none;
-  padding-left: none;
+  padding-left: 0px;
 }
 
 .about {
@@ -303,25 +303,25 @@ input[type=submit] {
 
 @-webkit-keyframes block-slide {
   from {
-    -webkit-transform: translate(none, none);
-    transform: translate(none, none);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
 
   to {
-    -webkit-transform: translate(none, 748px);
-    transform: translate(none, 748px);
+    -webkit-transform: translate(0px, 748px);
+    transform: translate(0px, 748px);
   }
 }
 
 @keyframes block-slide {
   from {
-    -webkit-transform: translate(none, none);
-    transform: translate(none, none);
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
   }
 
   to {
-    -webkit-transform: translate(none, 748px);
-    transform: translate(none, 748px);
+    -webkit-transform: translate(0px, 748px);
+    transform: translate(0px, 748px);
   }
 }
 
