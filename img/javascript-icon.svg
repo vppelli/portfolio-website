@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M32 0L32 0L32 32L0 32L0 0L32 0Z" id="path_1" />
+    <clipPath id="clip_1">
+      <use xlink:href="#path_1" clip-rule="evenodd" fill-rule="evenodd" />
+    </clipPath>
+  </defs>
+  <g id="javascript-icon" clip-path="url(#clip_1)">
+    <path d="M32 0L32 0L32 32L0 32L0 0L32 0Z" id="javascript-icon" fill="#FFFFFF" stroke="none" />
+    <path d="M2 -1.19209e-06L30 -1.19209e-06L27 28.6898L16 32L5 28.6898L2 -1.19209e-06Z" id="badge" fill="#D1B939" fill-rule="evenodd" stroke="none" />
+    <path d="M16 2.2069L27 2.2069L25 26.4828L16 28.6897L16 2.2069Z" id="box-top" fill="#FBDF44" fill-rule="evenodd" stroke="none" />
+    <path d="M17 5.51724L25 5.51724L25 8.8276L20 8.8276L20 14.0138L25 13.2414L24 23.1725L17 25.3793L17 22.069L21.5 20.9655L21.7686 16.9916L17 17.6552L17 5.51724Z" id="s" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    <path d="M7 19.8621L11.8094 20.9655L11.8094 5.51724L15 5.51724L15 25.3793L7 23.1724L7 19.8621Z" id="j" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
