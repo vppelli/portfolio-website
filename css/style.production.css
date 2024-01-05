@@ -30,7 +30,7 @@
 /* Global ----------------------------------------------------- */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 svg * {
@@ -77,8 +77,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   padding: 5px;
 }
@@ -88,8 +88,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   max-width: 2560px;
   height: 100%;
@@ -102,8 +102,8 @@ table {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -115,11 +115,11 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   padding: 15px;
   margin: auto;
@@ -130,8 +130,8 @@ table {
   text-align: center;
   padding: var(--sm);
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   max-width: 50px;
   color: var(--font-dark);
   background-image: url("../img/mp-logo.svg");
@@ -146,8 +146,8 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -174,15 +174,15 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   right: 484px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 80px;
   height: 100%;
   z-index: 2;
@@ -195,15 +195,15 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   right: 90%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
   z-index: 2;
 }
@@ -215,20 +215,20 @@ table {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
   width: auto;
@@ -238,8 +238,8 @@ table {
 
 .pannel-focus {
   -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
 }
 
 .pannel:hover {
@@ -247,8 +247,8 @@ table {
   -o-transition: .5s;
   transition: .5s;
   -webkit-box-flex: 3;
-      -ms-flex-positive: 3;
-          flex-grow: 3;
+  -ms-flex-positive: 3;
+  flex-grow: 3;
   height: 420px;
   border-bottom: 150px solid;
   border-color: var(--bg-dark-Opacity)
@@ -272,8 +272,8 @@ table {
 .btn-block {
   position: relative;
   -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
   width: var(--xxl);
   height: var(--lg);
   max-height: 50px;
@@ -362,11 +362,11 @@ input[type=submit] {
 /* Style Box ----------------------------------------------------- */
 .h-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   max-width: 442px;
   height: 1268px;
   background-color: var(--bg-light-Opacity);
@@ -375,27 +375,28 @@ input[type=submit] {
 
 .f-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   max-width: 410px;
   height: 1240px;
   background-color: var(--bg-light-1);
   margin: auto;
   margin-top: 14px;
 }
+
 .c-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   max-width: 2400px;
   padding: 5px;
@@ -404,15 +405,15 @@ input[type=submit] {
 
 .m-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   height: 1268px;
   background-color: var(--bg-light-Opacity);
   margin: auto;
@@ -420,15 +421,15 @@ input[type=submit] {
 
 .m-1-box {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   width: 95%;
   height: 95%;
   background-color: var(--bg-light);
@@ -451,15 +452,15 @@ input[type=submit] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   right: 0%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 524px;
   height: 100%;
 }
@@ -471,15 +472,15 @@ input[type=submit] {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   right: 0%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 90%;
   height: 100%;
 }
@@ -491,11 +492,11 @@ button {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border: none;
   cursor: pointer;
   padding: 12px;
@@ -786,6 +787,7 @@ button:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* Padding ----------------------------------------------------- */
 .p-t-1 {
   padding-top: var(--sm);
@@ -794,70 +796,77 @@ button:hover {
 /* Screen Sizes ----------------------------------------------------- */
 @media all and (max-width: 980px) {
   :root {
-      --font-lg: 22px;
+    --font-lg: 22px;
   }
+
   .pannel {
-      max-width: 100%;
-      max-height: 300px;
-      margin: none;
+    max-width: 100%;
+    max-height: 300px;
+    margin: none;
   }
 
   .pannel-focus {
-      max-width: 100%;
-      max-height: 300px;
-      margin: none;
+    max-width: 100%;
+    max-height: 300px;
+    margin: none;
   }
 
   .pannel:hover {
-      max-width: 100%;
-      max-height: 500px;
-      margin: none;
-      border-bottom: var(--xxl) solid;
-      border-color: rgba(39, 39, 39, 0.5)
+    max-width: 100%;
+    max-height: 500px;
+    margin: none;
+    border-bottom: var(--xxl) solid;
+    border-color: rgba(39, 39, 39, 0.5)
   }
+
   .flex-container {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .text-block {
-      top: 115px;
+    top: 115px;
   }
 
   .title {
-      font-size: var(--lg);
-      padding-left: var(--lg);
+    font-size: var(--lg);
+    padding-left: var(--lg);
   }
+
   .profile {
-      -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
+
   .portrait {
-      clear: both;
+    clear: both;
   }
 }
 
 @media all and (min-width: 980px) and (max-width: 2000px) {
   :root {
-      --font-normal: 18px;
-      --font-lg: 22px;
+    --font-normal: 18px;
+    --font-lg: 22px;
   }
 
   .pannel {
-      max-width: 300px;
+    max-width: 300px;
   }
+
   .pannel-focus {
-      max-width: 1400px;
+    max-width: 1400px;
   }
+
   .pannel:hover {
-      max-width: 1400px;
+    max-width: 1400px;
   }
+
   .text-block {
-      top: 100px;
+    top: 100px;
   }
 }
