@@ -14,72 +14,101 @@
 </head>
 
 <body>
-  <header id="top" class="page-header">
-    <img src="./img/web-logo.svg" width="200" height="70" alt="Websites logo" class="page-header__item">
-    <nav class="nav-main page-header__item">
-      <ul role="menubar" class="nav-list">
-        <li role="presentation">
-          <a href="./index.html" role="menuitem" class="nav-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="./about.html" role="menuitem" class="nav-list__item">About Me</a>
-        </li>
-        <li role="presentation">
-          <a href="./work.html" role="menuitem" class="nav-list__item">Work</a>
-        </li>
-        <li role="presentation">
-          <a href="./contact.html" role="menuitem" class="nav-list__item nav-list__item--active">Contact</a>
-        </li>
-      </ul>
+  <header class="nav-right">
+    <nav class="nav-bar">
+      <a href="./index.html" class="btn accent nav-btn r-2">
+        <img src="./img/home-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+      </a>
+      <a href="./about.html" class="btn accent nav-btn r-2">
+        <img src="./img/person-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+      </a>
+      <a href="./work.html" class="btn accent nav-btn r-2">
+        <img src="./img/photos-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+      </a>
+      <a href="./contact.html" class="btn accent-outlined nav-btn nav-btn-current r-2">
+        <img src="./img/mail-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+      </a>
     </nav>
   </header>
-  <main>
-    Michael Pietroski<br>
-    198-200 Hillside Ave<br>
-    07108, Newark<br>
-    New Jersey<br>
-    <br>
-    <a href="tel:+19736527269">Mobile Number</a><br>
-    Email
-    <a href="mailto:mpworkplace@gmail.com">mpworkplace(at)gmail(dot)com</a><br>
-    <a href="mailto:mpworkplace@gmail.com">Contact me</a>
-    <br>
-    <p>
-      Send me a Message
-    </p>
-    <div class="form">
-      <form action="form-send" method="post" id="contact-form" class="contact-form">
-        <div class="inner-form">
-          <label class="standard-lable" for="email">E-mail: </label>
-          <input type="email" id="email" required>
-          <br>
-          <label class="standard-lable" for="tel">Telephone: </label>
-          <input type="tel" id="tel">
-          <br>
+
+  <div class="about-box bg-l1">
+    <h1>MICHAEL PIETROSKI</h1>
+    <div class="flex-about">
+      <div class="h-box r-2">
+        <div class="flex-column f-box r-2">
+          <img src="./img/photo-mike.jpg" class="portrait" alt="Michael Pietroski's Portrait">
+          <h3 class="m-1 m-b-2">
+            WEB DEVELOPER '& <span class="f-a">3D ARTIST</span>
+          </h3>
+          <p class="m-1">
+            I have a strong background in Art, having completed 2 years of courses in Architecture at Essex
+            County College and received an Advanced 3D Modeling Diploma from CG Spectrum College of Digital
+            Art and Animation.
+          </p>
+          <p class="m-1">
+            Worked as a 3D Environment Artist at SoulLes Games and Metabuff, where I created realistic and
+            stylized environment assets, from props to creatures, and full game environments. With multiple
+            certifications in 3D modeling this helped build up many skills, being proficient in PBR
+            textures, UV tiling, and optimizing game ready assets . . .
+          </p>
+          <a href="./about.html" class="f-a m-1 m-b-2">Read more</a>
+          <p class="m-1 m-b-2">
+            Contact Information<br>
+            Email : <a href="mailto:mpworkplace@gmail.com">Contact me</a><br>
+            Phone : <a href="tel:+19736527269">Mobile Number</a>
+          </p>
+          <div class="flex-container">
+            <a href="https://github.com/vppelli" target="_blank">
+              <img src="./img/github-icon.svg" alt="Github" class="m-l-2 m-r-2">
+            </a>
+            <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+              <img src="./img/linkedin-icon.svg" alt="Linkedin" class="m-l-2 m-r-2">
+            </a>
+            <a href="https://www.artstation.com/mpietros" target="_blank">
+              <img src="./img/artstation-icon.svg" alt="Art station" class="m-l-2 m-r-2">
+            </a>
+          </div>
+          <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn accent r-2 m-1 m-t-2" download>DOWNLOAD
+            RESUME</a>
         </div>
-        <label class="standard-lable" for="msg">Message: </label><br>
-        <textarea maxlength="250" rows="3" id="msg" required></textarea>
-        <br>
-        <input type="submit" value="Send message" class="button-submit">
-      </form>
+      </div>
     </div>
-  </main>
-  <footer class="page-footer">
-    <p>
-      Find me on
-    </p>
-    <div class="social-footer">
-      <a href="https://github.com/vppelli" target="_blank">
-        <img src="./img/github-icon.svg" alt="Github">
-      </a>
-      <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
-        <img src="./img/linkedin-icon.svg" alt="Linkedin">
-      </a>
-      <a href="https://www.artstation.com/mpietros" target="_blank">
-        <img src="./img/artstation-icon.svg" alt="Art station">
-      </a>
+  </div>
+  <div class="flex-container bg-img r-2 m-t-3"
+    style="background-image: url('https://cdna.artstation.com/p/assets/images/images/060/279/912/large/michael-pietroski-t-s-screenshot01.jpg?1678212790-----------------'); background-position: center;">
+    <div class="flex-description bg-do r-2">
+      <div class="c-box s-box r-2 m-t-3 f-l">
+        <main>
+          Michael Pietroski<br>
+          198-200 Hillside Ave<br>
+          07108, Newark<br>
+          New Jersey<br>
+          <br>
+          <a href="tel:+19736527269">Mobile Number</a><br>
+          Email:
+          <a href="mailto:mpworkplace@gmail.com">Contact me</a>
+          <div class="form">
+            <p>
+              Send a Message
+            </p>
+            <form action="form-send" method="post" id="contact-form" class="contact-form">
+              <div class="inner-form">
+                <label class="standard-lable" for="email">E-mail: </label>
+                <input type="email" id="email" required>
+                <label class="standard-lable" for="tel">Telephone: </label>
+                <input type="tel" id="tel">
+                <label class="standard-lable" for="msg">Message: </label>
+                <textarea maxlength="250" rows="3" id="msg" required></textarea>
+              </div>
+              <input type="submit" value="Send message" class="btn accent-outlined r-2">
+            </form>
+          </div>
+        </main>
+      </div>
     </div>
-  </footer>
+    <div class="pannel-hidden">
+    </div>
+  </div>
 </body>
 
 </html>

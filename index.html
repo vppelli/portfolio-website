@@ -13,55 +13,54 @@
 
 </head>
 
-<body>
-  <header id="top" class="page-header">
-      <img src="./img/web-logo.svg" width="200" height="70" alt="Websites logo" class="page-header__item">
-      <nav class="nav-main page-header__item">
-        <ul role="menubar" class="nav-list">
-          <li role="presentation">
-            <a href="./index.html" role="menuitem" class="nav-list__item nav-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="./about.html" role="menuitem" class="nav-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="./work.html" role="menuitem" class="nav-list__item">Work</a>
-          </li>
-          <li role="presentation">
-            <a href="./contact.html" role="menuitem" class="nav-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-  </header>
-  <main>
-    <div class="profile">
-      <img src="./img/photo-mike.jpg" class="portrait" alt="Michael Portrait">
-      <h1>
-        Hello World!
-      </h1>
-      <p>
-        My name is Michael Pietroski.<br>
-        I am a <span>web</span> developer from New Jersey.
-      </p>
-      <a href="./work.html#code">Check out some of my code</a>
+<body class="bg-img" style="background-image: url('./img/art-5.png');">
+  <div class="about-l-box bg-l1">
+    <h1>MICHAEL PIETROSKI</h1>
+    <div class="flex-about">
+      <div class="m-box r-2">
+        <div class="flex-column m-1-box r-2">
+          <img src="./img/photo-mike.jpg" class="portrait" alt="Michael Pietroski's Portrait">
+          <div class="flex-container m-b-2">
+            <a href="./index.html" class="btn accent-outlined nav-btn nav-btn-current r-2">
+              <img src="./img/home-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+            </a>
+            <a href="./about.html" class="btn accent nav-btn r-2">
+              <img src="./img/person-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+            </a>
+            <a href="./work.html" class="btn accent nav-btn r-2">
+              <img src="./img/photos-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+            </a>
+            <a href="./contact.html" class="btn accent nav-btn r-2">
+              <img src="./img/mail-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
+            </a>
+          </div>
+          <h3 class="m-1 m-b-2">
+            WEB DEVELOPER '& <span class="f-a">3D ARTIST</span>
+          </h3>
+          <p class="m-1">
+            My name is Michael Pietroski.<br>
+            I am a web developer '& 3D Artist<br>Located in New Jersey.
+          </p>
+          <a href="./work.html" class="f-a m-1 m-b-1">See my work</a>
+          <a href="./about.html" class="f-a m-1 m-b-5">About me</a>
+          <div class="flex-container">
+            <a href="https://github.com/vppelli" target="_blank">
+              <img src="./img/github-icon.svg" alt="Github" class="m-l-2 m-r-2">
+            </a>
+            <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+              <img src="./img/linkedin-icon.svg" alt="Linkedin" class="m-l-2 m-r-2">
+            </a>
+            <a href="https://www.artstation.com/mpietros" target="_blank">
+              <img src="./img/artstation-icon.svg" alt="Art station" class="m-l-2 m-r-2">
+            </a>
+          </div>
+          <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn accent r-2 m-1 m-t-2" download>DOWNLOAD
+            RESUME</a>
+        </div>
+      </div>
     </div>
-  </main>
-  <footer class="page-footer">
-    <p>
-      Find me on
-    </p>
-    <div class="social-footer">
-      <a href="https://github.com/vppelli" target="_blank">
-        <img src="./img/github-icon.svg" alt="Github">
-      </a>
-      <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
-        <img src="./img/linkedin-icon.svg" alt="Linkedin">
-      </a>
-      <a href="https://www.artstation.com/mpietros" target="_blank">
-        <img src="./img/artstation-icon.svg" alt="Art station">
-      </a>
-    </div>
-  </footer>
+  </div>
+
 </body>
 
 </html>
