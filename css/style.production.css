@@ -71,6 +71,10 @@ table {
   margin: auto;
 }
 
+h1 {
+  margin: auto;
+}
+
 /* Flex Base Styles ----------------------------------------------------- */
 .flex-container {
   display: -webkit-box;
@@ -121,6 +125,7 @@ table {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
+  height: 100%;
   padding: 15px;
   margin: auto;
 }
@@ -226,29 +231,18 @@ table {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  width: auto;
+  background-position: 100% 0%;
+  width: 100%;
   height: 348px;
   margin: 0px 2px 0px 2px;
-}
-
-.pannel-focus {
-  -webkit-box-flex: 3;
-  -ms-flex-positive: 3;
-  flex-grow: 3;
 }
 
 .pannel:hover {
   -webkit-transition: .5s;
   -o-transition: .5s;
   transition: .5s;
-  -webkit-box-flex: 3;
-  -ms-flex-positive: 3;
-  flex-grow: 3;
   height: 420px;
   border-bottom: 150px solid;
   border-color: var(--bg-dark-Opacity)
@@ -377,14 +371,12 @@ input[type=submit] {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 410px;
-  height: 1240px;
-  background-color: var(--bg-light-1);
-  margin: auto;
-  margin-top: 14px;
 }
 
 .c-box {
@@ -442,7 +434,7 @@ input[type=submit] {
 }
 
 .about {
-  padding: var(--md);
+  text-align: center;
 }
 
 .about-box {
@@ -793,22 +785,54 @@ button:hover {
   padding-top: var(--sm);
 }
 
+.p-a {
+  padding-left: var(--lg);
+  padding-right: var(--lg);
+
+}
+
 /* Screen Sizes ----------------------------------------------------- */
-@media all and (max-width: 980px) {
+@media all and (max-width: 1024px) {
   :root {
+    --font-normal: 18px;
     --font-lg: 22px;
+  }
+
+  .nav-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .nav-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    right: auto;
+    top: 0px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg-dark-Opacity);
+    border-bottom: var(--sm) solid;
+    border-color: rgba(39, 39, 39, 0.5)
   }
 
   .pannel {
     max-width: 100%;
     max-height: 300px;
     margin: none;
-  }
-
-  .pannel-focus {
-    max-width: 100%;
-    max-height: 300px;
-    margin: none;
+    background-position: center;
   }
 
   .pannel:hover {
@@ -819,54 +843,80 @@ button:hover {
     border-color: rgba(39, 39, 39, 0.5)
   }
 
-  .flex-container {
+  .pannel-hidden {
+    display: none;
+  }
+
+  .flex-description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    padding: var(--sm);
+  }
+
+  .about-box {
+    display: none;
+  }
+
+  .about-l-box {
+    width: 100%;
   }
 
   .text-block {
     top: 115px;
   }
 
-  .title {
-    font-size: var(--lg);
-    padding-left: var(--lg);
-  }
-
-  .profile {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .portrait {
-    clear: both;
+    width: 244px;
   }
+
 }
 
-@media all and (min-width: 980px) and (max-width: 2000px) {
+@media all and (min-width: 1024px) and (max-width: 1280px) {
   :root {
     --font-normal: 18px;
     --font-lg: 22px;
   }
 
-  .pannel {
-    max-width: 300px;
+  .flex-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
-  .pannel-focus {
-    max-width: 1400px;
+  .portrait {
+    width: 244px;
   }
 
-  .pannel:hover {
-    max-width: 1400px;
+  .about-box {
+    margin: auto;
   }
 
   .text-block {
     top: 100px;
+  }
+}
+
+@media all and (min-width: 1280px) and (max-width: 1920px) {
+
+  .about-box {
+    margin: auto;
+  }
+
+  .flex-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .text-block {
+    top: 100px;
+  }
+
+  .portrait {
+    width: 244px;
   }
 }
