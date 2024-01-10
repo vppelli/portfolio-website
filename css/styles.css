@@ -360,7 +360,7 @@ input[type=submit] {
     right: 0%;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
 }
 
@@ -721,10 +721,6 @@ button:hover {
 
     .about-box {
         display: none;
-    }
-
-    .about-l-box {
-        width: 100%;
     }
 
     .text-block {
