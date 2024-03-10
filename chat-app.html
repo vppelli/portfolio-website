@@ -4,172 +4,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Work Showcase</title>
+    <title>Showcase - ChatApp</title>
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" type="text/css" href="./css/style.production.css">
 
 </head>
 
 <body>
-    <!-- <header class="nav-right">
-        <nav class="nav-bar">
-            <a href="./index.html" class="btn accent nav-btn r-2">
-                <img src="./img/home-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
-            </a>
-            <a href="./about.html" class="btn accent nav-btn r-2">
-                <img src="./img/person-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
-            </a>
-            <a href="./work.html" class="btn accent-outlined nav-btn nav-btn-current r-2">
-                <img src="./img/photos-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
-            </a>
-            <a href="./contact.html" class="btn accent nav-btn r-2">
-                <img src="./img/mail-icon.svg" alt="Navigation to Home" class="m-l-2 m-r-2">
-            </a>
-        </nav>
-    </header> -->
-    <div class="about-box bg-l1 hide-about">
-        <div class="flex-column">
-            <h1 class="m">MICHAEL PIETROSKI</h1>
-            <div class="portrait" alt="Michael Pietroski's Portrait"></div>
-            <h3 class="m p-a">
-                WEB DEVELOPER '& <span class="f-a">3D ARTIST</span>
-            </h3>
-            <div class="p-a">
+    <div class="flex-layout" style="justify-content: center;">
+        <div class="flex-content" style="max-width: 1920px; box-shadow: -2px 0 8px 0 rgba(0, 0, 0, .25);">
+            <div class="flex-description m-tb p-lr">
+                <h1 class="title">CHAT<span class="f-outline">APP</span></h1>
+                <h2>OVERVIEW</h2>
                 <p>
-                    I have a strong background in Art, having completed 2 years of courses in Architecture at Essex
-                    County College and received an Advanced 3D Modeling Diploma from CG Spectrum College of Digital
-                    Art and Animation.<br>
-                    Worked as a 3D Environment Art . . .
+                    Welcome to Chat App! Users can send images, take photos, send their location, and chat with
+                    others.
+                    Using Firebase to store messages, and images, while using Dialogflow for the in-app chatbot.
+                    Yes
+                    you
+                    can talk with a chat-bot! Simple and understandable, using Gifted Chat to help design and
+                    setup
+                    the
+                    UI component, it will feel natural to use.
                 </p>
-                <a href="./about.html" class="f-a">Read more</a>
+                <h2>OBJECTIVE</h2>
                 <p>
-                    Contact Information<br>
-                    Email : <a href="mailto:mpworkplace@gmail.com">Contact me</a><br>
-                    Phone : <a href="tel:+19736527269">Mobile Number</a>
+                    To build a chat app for mobile devices using React Native. The app will provide users with a
+                    chat
+                    interface and options to share images and their location.<br>
+                    Extra: Integrate a chat bot to help respond
+                    to users questions about chat app.
                 </p>
             </div>
-            <div class="flex-container">
+            <div class="flex-layout layout p-lr">
+                <div class="focus-layout current-layout" style="cursor: default;">
+                    <h1 class="m-tb title">APPROACH</h1>
+                </div>
+                <div class="focus-layout round-pannel" style="cursor: default;">
+                    <img src="./img/fb-df-logo.svg" alt="Firebase and Dialogflow Logos">
+                </div>
+            </div>
+            <div class="flex-description p-lr">
+                <h3>FIREBASE</h3>
+                <p>
+                    Firebase provided by Google helps host databases, services, authentication, and integration
+                    for
+                    a variety of applications.<br>
+                    This was a perfect for the Chat app. Using there authentication users can anonymously
+                    sign-in
+                    with Firebase.<br>
+                    With Firebase: Firestore helps store conversations, photos and videos to their database.
+                    Very
+                    helpful when need to read a old message sent by a friend or self.
+                </p>
+                <h3>DIALOGFLOW</h3>
+                <p>
+                    Dialogflow provided by Google is a natural language understanding platform used to design
+                    and
+                    integrate a conversational user interface into mobile apps.<br>
+                    With Dialogflow integrated into the Chat App, I was able to design a bot to respond to
+                    questions
+                    asked by users. From App related questions to very basic conversations ( eg. Hello, Can I
+                    ask
+                    you a question, What is Chat App, )
+                </p>
+            </div>
+            <div class="flex-description p-lr">
+                <h3>CLIENT SIDE</h3>
+                <p>
+                    First I need to set up a development environment to work with, React Native and Expo was
+                    used.
+                    Designing the apps UI '& Accessibility functionality with Native UI components and chat
+                    features
+                    from the Gifted Chat library. Once the layout was established I needed to connect the
+                    backend to
+                    the
+                    app so users could sign-in and message.<br>
+                    What if you lost your internet connection and needed to view an old message sent?<br>
+                    Phase 4 added the feature to have messages stored locally using async Storage. This allowed
+                    users to
+                    view older messages, once online you could send messages and receive updated messages.<br>
+                    All that was left was to provide users with the ability to send Images, take photos, and
+                    send
+                    their
+                    location.
+                </p>
+                <div class="img-box" style="background-image: url('./img/chat-app-bg.gif');"></div>
+            </div>
+            <div class="flex-description p-lr">
+                <h3>CHALLENGES</h3>
+                <p>
+                    When looking back integrating the chat bot was the most challenging and fun experiences.
+                    Since
+                    this
+                    was the first time I added a extra feature that was not in the main objective. Finding ways
+                    to
+                    get
+                    it to work with gifted chat, learning about hiding secret keys through environment
+                    variables. I
+                    had
+                    to really search though multiple documentations, took lots of trial and error but in the end
+                    I
+                    learned so much from it.
+                </p>
+                <h4>DURATION</h4>
+                <p>
+                    Development of Chat App had its ups and down with 2 weeks for its completion.
+                </p>
+                <h4>CREDITS</h4>
+                <p class="m-b-3">
+                    Lead Developer: Michael Pietroski<br>
+                    Tutor: Rylan Albach<br>
+                    Mentor: Enrique Gonzalez
+                </p>
+            </div>
+            <div class="button-layout layout p-lr">
+                <a href="https://github.com/vppelli/chat-app" target="_blank" class="btn"
+                    style="background-color: #B9C6AE; flex-grow: 2; height: auto;">
+                    <h1 class="title">GITHUB</h1>
+                </a>
+                <a href="./index.html#work" class="btn" style="background-color: #8A95A5; height: auto;">
+                    <h1 class="title">BACK</h1>
+                </a>
+            </div>
+            <div class="flex-layout footer">
+                <a href="https://github.com/vppelli" target="_blank" class="m-tb">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank" class="m-tb">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank" class="m-tb">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon icon">
+                </a>
+            </div>
+        </div>
+        <div class="profile-sidebar sticky-block" id="full">
+            <div class="button-layout">
+                <button onclick="hideSidebar()">
+                    <img src="./img/collapse.svg" alt="Collapse button">
+                </button>
+            </div>
+            <div class="button-layout">
+                <a class="btn btn-flipped" href="https://github.com/vppelli/chat-app">GITHUB</a>
+                <a class="btn btn-flipped" href="./index.html#work">BACK</a>
+            </div>
+            <div class="profile-img" alt="Michael Pietroski's Portrait"></div>
+            <h1 class="m-lr">MICHAEL PIETROSKI</h1>
+            <h2>FULL STACK DEVELOPER '& 3D ARTIST</h2>
+            <p>
+                Hello, I am Michael Pietroski, a Full Stack Developer and 3D Modeler. In 3D Modeling, perspective and
+                emotions are important. This helps me build connections with my co-workers and customers and improve
+                user experience and code. I cannot wait to bring customers' creative visions to life.
+            </p>
+            <div class="button-layout">
+                <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
+                <a class="btn" href="tel:+19736527269">CALL</a>
+            </div>
+            <div class="icon-layout">
                 <a href="https://github.com/vppelli" target="_blank">
-                    <img src="./img/github-icon.svg" alt="Github" class="m-l-2 m-r-2 btn btn-r">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
                 </a>
                 <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
-                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="m-l-2 m-r-2 btn btn-r">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
                 </a>
                 <a href="https://www.artstation.com/mpietros" target="_blank">
-                    <img src="./img/artstation-icon.svg" alt="Art station" class="m-l-2 m-r-2 btn btn-r">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
                 </a>
             </div>
-            <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn accent r-2 m" download>DOWNLOAD
-                RESUME</a>
+            <div class="button-layout">
+                <a class="btn" href="./files/MICHAEL-PIETROSKI-resume.pdf" download>DOWNLOAD RESUME</a>
+            </div>
         </div>
-    </div>
-    <div class="bg-l space-right-2">
-        <div class="flex-container-2 bg-l1"
-            style="background-image: url('./img/logo-line.png'); background-repeat: no-repeat; background-position: 10% 0%;">
-            <div class="right-box">
-                <div class="flex-column-2">
-                    <h1 class="lg-txt">CHAT<span class="f-outline">APP</span></h1>
-                    <h2>OVERVIEW</h2>
-                    <p>
-                        Welcome to Chat App! Users can send images, take photos, send their location, and chat with
-                        others.
-                        Using Firebase to store messages, and images, while using Dialogflow for the in-app chatbot. Yes
-                        you
-                        can talk with a chat-bot! Simple and understandable, using Gifted Chat to help design and setup
-                        the
-                        UI component, it will feel natural to use.
-                    </p>
-                    <h2>OBJECTIVE</h2>
-                    <p>
-                        To build a chat app for mobile devices using React Native. The app will provide users with a
-                        chat
-                        interface and options to share images and their location.<br>
-                        Extra: Integrate a chat bot to help respond
-                        to users questions about chat app.
-                    </p>
-                </div>
-            </div>
-            <div class="box m-t-5">
-                <div class="flex-column-2">
-                    <h2>APPROACH</h2>
-                    <h3>FIREBASE</h3>
-                    <p>
-                        Firebase provided by Google helps host databases, services, authentication, and integration for
-                        a variety of applications.<br>
-                        This was a perfect for the Chat app. Using there authentication users can anonymously sign-in
-                        with Firebase.<br>
-                        With Firebase: Firestore helps store conversations, photos and videos to their database. Very
-                        helpful when need to read a old message sent by a friend or self.
-                    </p>
-                    <h3>DIALOGFLOW</h3>
-                    <p>
-                        Dialogflow provided by Google is a natural language understanding platform used to design and
-                        integrate a conversational user interface into mobile apps.<br>
-                        With Dialogflow integrated into the Chat App, I was able to design a bot to respond to questions
-                        asked by users. From App related questions to very basic conversations ( eg. Hello, Can I ask
-                        you a question, What is Chat App, )
-                    </p>
-                    <h3 class="m-t-3">CLIENT SIDE</h3>
-                    <p>
-                        First I need to set up a development environment to work with, React Native and Expo was used.
-                        Designing the apps UI '& Accessibility functionality with Native UI components and chat features
-                        from the Gifted Chat library. Once the layout was established I needed to connect the backend to
-                        the
-                        app so users could sign-in and message.<br>
-                        What if you lost your internet connection and needed to view an old message sent?<br>
-                        Phase 4 added the feature to have messages stored locally using async Storage. This allowed
-                        users to
-                        view older messages, once online you could send messages and receive updated messages.<br>
-                        All that was left was to provide users with the ability to send Images, take photos, and send
-                        their
-                        location.
-                    </p>
-                </div>
-            </div>
-            <div class="box m-t-3">
-                <div class="flex-column-2" style="justify-content: start;">
-                    <div class="img-box m-b-2" style="background-image: url('./img/chat-app-bg.gif');"></div>
-                    <h3>CHALLENGES</h3>
-                    <p>
-                        When looking back integrating the chat bot was the most challenging and fun experiences. Since
-                        this
-                        was the first time I added a extra feature that was not in the main objective. Finding ways to
-                        get
-                        it to work with gifted chat, learning about hiding secret keys through environment variables. I
-                        had
-                        to really search though multiple documentations, took lots of trial and error but in the end I
-                        learned so much from it.
-                    </p>
-                    <h4>DURATION</h4>
-                    <p>
-                        Development of Chat App had its ups and down with 2 weeks for its completion.
-                    </p>
-                    <h4>CREDITS</h4>
-                    <p class="m-b-3">
-                        Lead Developer: Michael Pietroski<br>
-                        Tutor: Rylan Albach<br>
-                        Mentor: Enrique Gonzalez
-                    </p>
-                </div>
-            </div>
-            <div class="box" style="height: auto;">
-                <div class="flex-column-2" style="justify-content: start;">
-                    <div class="flex-description" style="padding: 0px;">
-                        <a href="https://github.com/vppelli/chat-app" target="_blank" class="btn btn-flex r-l-2"
-                            style="background-color: #B9C6AE; flex-grow: 2;">
-                            <h2 class='f-d'>GITHUB</h2>
-                        </a>
-                        <a href="./index.html" class="btn btn-flex r-r-2" style="background-color: #8A95A5;">
-                            <h2 class='f-d'>BACK</h2>
-                        </a>
-                    </div>
-                </div>
+        <div class="mini-sidebar sticky-block is-hidden" id="mini">
+            <div class="button-sideways-layout">
+                <button onclick="showSidebar()" class="arrow">
+                    <img src="./img/expand.svg" alt="Expand button">
+                </button>
+                <a class="btn btn-flipped" href="https://github.com/vppelli/chat-app">GITHUB</a>
+                <a class="btn btn-flipped" href="./index.html#work">BACK</a>
+                <a href="https://github.com/vppelli" target="_blank">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon" style="rotate: -90deg;">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon" style="rotate: -90deg;">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon" style="rotate: -90deg;">
+                </a>
+                <a class="btn btn-flipped" href="./files/MICHAEL-PIETROSKI-resume.pdf" download>RESUME</a>
             </div>
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
