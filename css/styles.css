@@ -319,6 +319,10 @@ button:hover,
 
 }
 
+.img-select {
+    flex-grow: 1;
+}
+
 .is-hidden {
     display: none;
 }
@@ -382,6 +386,9 @@ button:hover,
     .img-box {
         height: 100px;
     }
+    .img-select {
+        width: 200px;
+    }
 }
 
 @media all and (min-width: 375px) and (max-width: 720px) {
@@ -428,6 +435,10 @@ button:hover,
 
     .img-box {
         height: 200px;
+    }
+
+    .img-select {
+        width: 375px;
     }
 }
 
