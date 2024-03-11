@@ -14,14 +14,14 @@
 </head>
 
 <body>
-    <div class="flex-layout" style="justify-content: center;">
+    <div class="flex-layout jc">
         <div class="flex-content" style="max-width: 1920px; box-shadow: -2px 0 8px 0 rgba(0, 0, 0, .25);">
-            <div class="flex-layout layout p-lr">
+            <div class="flex-description layout p-lr">
                 <h1 class="title">MICHAEL PIETROSKI</h1>
             </div>
             <div class="flex-layout p-lr layout">
                 <img src="https://avatars.githubusercontent.com/u/138417934?v=4" alt="Michael Pietroski's Portrait"
-                    style="width: 240px; border-radius: 200px;">
+                    style="width: 280px; border-radius: 85px;">
                 <div class="flex-description p-lr m-tb" style="width: fit-content;">
                     <h3>
                         FULL STACK DEVELOPER '& <span class="f-a">3D ARTIST</span>
@@ -34,8 +34,8 @@
                     <a href="./index.html#work" class="f-a">See my work</a>
                 </div>
             </div>
-            <div class="flex-layout min-width" id="about">
-                <div class="flex-description p-lr">
+            <div class="flex-layout" id="about">
+                <div class="flex-description layout p-lr m-lr" style="width: 900px;">
                     <h1>About me</h1>
                     <p>
                         As a former 3D Modeler turned web developer, creating prototypes, render-ready assets, and
@@ -48,7 +48,7 @@
                         process. Some examples of my work include.
 
                     </p>
-                    <ul>
+                    <ul class="list">
                         <li>
                             Pokedex: Using the PokeAPI to display information about selected Pokemon. Pokedex provides a
                             list of Pokemon with information about them. Developed using HTML, JavaScript, Bootstrap,
@@ -65,6 +65,9 @@
                             and Android Studio.
                         </li>
                     </ul>
+                    <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn btn-flipped" download>DOWNLOAD
+                        RESUME
+                    </a>
                     <p>
                         Let's get in touch, contact me through my <a href="mailto:mpworkplace@gmail.com">Portfolio</a>
                         or my
@@ -88,93 +91,11 @@
                         PBR
                         textures, UV tiling, and optimizing game ready assets.
                     </p>
-                    <div class="m-lr">
-                        <img class="badge" src="./img/html5-icon.svg" alt="html5 badge">
-                        <img class="badge" src="./img/css3-icon.svg" alt="css3 badge">
-                        <img class="badge" src="./img/javascript-icon.svg" alt="java script badge">
+                    <div class="button-layout">
+                        <img src="./img/html5-icon.svg" alt="html5 badge">
+                        <img src="./img/css3-icon.svg" alt="css3 badge">
+                        <img src="./img/javascript-icon.svg" alt="java script badge">
                     </div>
-                    <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn btn-flipped" download>DOWNLOAD
-                        RESUME
-                    </a>
-
-                </div>
-                <div class="flex-description" style="justify-content: center; text-align: center;">
-                    <h1>
-                        3D Modeling Skills
-                    </h1>
-                    <h3>
-                        Skills
-                    </h3>
-                    <ul>
-                        <li>
-                            Lighting
-                        </li>
-                        <li>
-                            Texturing
-                        </li>
-                        <li>
-                            UV Mapping
-                        </li>
-                        <li>
-                            3D Sculpting
-                        </li>
-                        <li>
-                            Graphic Design
-                        </li>
-                        <li>
-                            UI/UX Experience
-                        </li>
-                        <li>
-                            Trim / Decal workflow
-                        </li>
-                        <li>
-                            Rendering
-                        </li>
-                        <li>
-                            UE Blueprints
-                        </li>
-                        <li>
-                            Create and editing Materials
-                        </li>
-                    </ul>
-                    <h1>
-                        Programming
-                    </h1>
-                    <h3>
-                        Skills
-                    </h3>
-                    <ul>
-                        <li>
-                            Prototyping
-                        </li>
-                        <li>
-                            Development Testing
-                        </li>
-                        <li>
-                            Database and SQL
-                        </li>
-                        <li>
-                            Git version control
-                        </li>
-                        <li>
-                            Server-Side Programming
-                        </li>
-                        <li>
-                            Client-Side Programming
-                        </li>
-                        <li>
-                            UI/UX Experience
-                        </li>
-                        <li>
-                            API
-                        </li>
-                        <li>
-                            Node.js
-                        </li>
-                        <li>
-                            React.js
-                        </li>
-                    </ul>
                 </div>
             </div>
             <div class="flex-layout" id="work">
@@ -186,53 +107,208 @@
                 </div>
             </div>
             <div class="p-lr layout code" style="grid-auto-flow: row;">
-                <a class="pannel" href="#">
-                    <h1 class="m-tb">
-                        Webpage
-                    </h1>
+                <a class="pannel" href="https://github.com/vppelli/portfolio-website"
+                    style="background-image: url('./img/img-webportfolio.png'); background-position: center; background-size: cover;">
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            Portfolio Webpage The one you are currently on!
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            PORTFOLIO - WEBPAGE
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/Pokedex-app"
                     style="background-image: url('./img/img-pokedex.png'); background-position: center; background-size: cover;">
-                    <h1 class="m-tb">
-                        Pokedex
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            Pokedex-app is a simple JavaScript app using the PokeAPI to displayed information about
+                            selected Pokemon.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            POKEDEX
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/movie_api"
                     style="background-image: url('./img/img-api.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        MovieAPI
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            The web application will provide users with access to information about different movies,
+                            directors, and genres. Users will be able to sign up, update their personal information, and
+                            create a list of their favorite movies.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            MOVIEAPI
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/movie_client"
                     style="background-image: url('./img/img-movie.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        MovieMike
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            This React web application provides users with access to information about different movies,
+                            directors, and genres. Users can sign up, update their personal information, and create a
+                            list of their favorite movies.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            MOVIEMIKE
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/meet"
                     style="background-image: url('./img/img-meet.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        MeetApp
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            To build a serverless, progressive web application (PWA) with React using a test-driven
+                            development (TDD) technique. The application uses the Google Calendar API to fetch upcoming
+                            events.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            MEETAPP
+                        </h1>
+                    </div>
                 </a>
                 <a class="pannel" href="./chat-app.html"
                     style="background-image: url('./img/img-chat.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        ChatApp
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            The Chat App lets users chat with others. Users can send images, take photos, send their
+                            location, and talk to a chatbot. Using Firebase to store messages, and images, while using
+                            Dialogflow for the in-app chatbot.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            CHATAPP
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/meet"
                     style="background-image: url('./img/img-angular.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        MovieAngular
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            This Angular application provides users with access to information about different movies,
+                            directors, and genres. Users can sign up, update their personal information, and create a
+                            list of their favorite movies.
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            MOVIEANGULAR
+                        </h1>
+                    </div>
                 </a>
-                <a class="pannel" href="#"
+                <a class="pannel" href="https://github.com/vppelli/meet"
                     style="background-image: url('./img/img-pred.png'); background-position: 50% 50%; background-size: cover;">
-                    <h1 class="m-tb">
-                        Predecessor DiscordThemes
-                    </h1>
+                    <div class="align p-lr p-tb">
+                        <p class="font-color">
+                            Customize Discord with Predecessor Hero themes. There are pre-made themes for each hero, you
+                            can also further change them to your liking, Instruction inside the theme.css files! Enjoy
+                        </p>
+                        <p>
+                            __________________________
+                        </p>
+                        <h1>
+                            PREDECESSOR DISCORD THEMES
+                        </h1>
+                    </div>
                 </a>
+            </div>
+            <div class="flex-description" style="justify-content: center; text-align: center;">
+                <h1>
+                    3D Modeling Skills
+                </h1>
+                <h3>
+                    Skills
+                </h3>
+                <ul>
+                    <li>
+                        Lighting
+                    </li>
+                    <li>
+                        Texturing
+                    </li>
+                    <li>
+                        UV Mapping
+                    </li>
+                    <li>
+                        3D Sculpting
+                    </li>
+                    <li>
+                        Graphic Design
+                    </li>
+                    <li>
+                        UI/UX Experience
+                    </li>
+                    <li>
+                        Trim / Decal workflow
+                    </li>
+                    <li>
+                        Rendering
+                    </li>
+                    <li>
+                        UE Blueprints
+                    </li>
+                    <li>
+                        Create and editing Materials
+                    </li>
+                </ul>
+                <h1>
+                    Programming
+                </h1>
+                <h3>
+                    Skills
+                </h3>
+                <ul>
+                    <li>
+                        Prototyping
+                    </li>
+                    <li>
+                        Development Testing
+                    </li>
+                    <li>
+                        Database and SQL
+                    </li>
+                    <li>
+                        Git version control
+                    </li>
+                    <li>
+                        Server-Side Programming
+                    </li>
+                    <li>
+                        Client-Side Programming
+                    </li>
+                    <li>
+                        UI/UX Experience
+                    </li>
+                    <li>
+                        API
+                    </li>
+                    <li>
+                        Node.js
+                    </li>
+                    <li>
+                        React.js
+                    </li>
+                </ul>
             </div>
             <div class="flex-layout p-lr min-width" id="contact">
                 <div class="flex-description" style="text-align: center;">
@@ -321,13 +397,13 @@
                 <a class="btn btn-flipped" href="./index.html#work">SHOWCASE</a>
                 <a class="btn btn-flipped" href="./index.html#about">ABOUT</a>
                 <a class="btn btn-flipped" href="./index.html#contact">CONTACT</a>
-                <a href="https://github.com/vppelli" target="_blank">
+                <a href="https://github.com/vppelli" target="_blank" class="layout">
                     <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon" style="rotate: -90deg;">
                 </a>
-                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank" class="layout">
                     <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon" style="rotate: -90deg;">
                 </a>
-                <a href="https://www.artstation.com/mpietros" target="_blank">
+                <a href="https://www.artstation.com/mpietros" target="_blank" class="layout">
                     <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon" style="rotate: -90deg;">
                 </a>
                 <a class="btn btn-flipped" href="./files/MICHAEL-PIETROSKI-resume.pdf" download>RESUME</a>
