@@ -16,29 +16,113 @@
 </head>
 
 <body>
-    <div class="flex-layout" style="justify-content: center;">
+    <div class="flex-layout jc">
         <div class="flex-content" style="max-width: 1920px; box-shadow: -2px 0 8px 0 rgba(0, 0, 0, .25);">
-            <div class="flex-description m-tb p-lr">
+            <div class="flex-description layout p-lr">
                 <h1 class="title">CHAT<span class="f-outline">APP</span></h1>
-                <h2>OVERVIEW</h2>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description m-tb">
+                    <h2>OVERVIEW</h2>
+                    <p>
+                        Welcome to Chat App! Users can send images, take photos, send their location, and chat with
+                        others.
+                        Using Firebase to store messages, and images, while using Dialogflow for the in-app chatbot.
+                        Yes
+                        you
+                        can talk with a chat-bot! Simple and understandable, using Gifted Chat to help design and
+                        setup
+                        the
+                        UI component, it will feel natural to use.
+                    </p>
+                    <h2>OBJECTIVE</h2>
+                    <p>
+                        To build a chat app for mobile devices using React Native. The app will provide users with a
+                        chat
+                        interface and options to share images and their location.<br>
+                        Extra: Integrate a chat bot to help respond
+                        to users questions about chat app.
+                    </p>
+                    <h2>TOOLS</h2>
+                    <p>
+                        React Native, Expo, Google Firebase, Google Dialogflow
+                    </p>
+                </div>
+                <div class="flex-layout">
+                    <div class="flex-description">
+                        <img class="img-box" src="./img/chat-app-bg.png">
+                    </div>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/chat-app-design.png">
+                </div>
+                <div class="flex-description m-tb">
+                    <h3>CLIENT-SIDE</h3>
+                    <p>
+                        First I need to set up a development environment to work with, React Native and Expo were used.
+                        Designing the app's UI '& Accessibility functionality with Native UI components and chat
+                        features
+                        from the Gifted Chat library.
+                    </p>
+                    <h2>LOGIN DESIGN</h2>
+                    <p>
+                        The app must be styled according to the given screen design. Testing my skill to replicate a set
+                        style for the Chat app finished product.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-description p-lr">
+                <h2>CHAT UI '& ACCESSIBILITY</h2>
                 <p>
-                    Welcome to Chat App! Users can send images, take photos, send their location, and chat with
-                    others.
-                    Using Firebase to store messages, and images, while using Dialogflow for the in-app chatbot.
-                    Yes
-                    you
-                    can talk with a chat-bot! Simple and understandable, using Gifted Chat to help design and
-                    setup
-                    the
-                    UI component, it will feel natural to use.
+                    Building the chat screen UI used many key points from popular chat app interfaces. Better to use
+                    designs that work and are natural to many users. Next was the chat functionality, using the Gifted
+                    Chat library, which made it very streamlined to connect and set message-sending.
                 </p>
-                <h2>OBJECTIVE</h2>
+                <h2>STORING DATA ON THE CLIENT-SIDE</h2>
                 <p>
-                    To build a chat app for mobile devices using React Native. The app will provide users with a
-                    chat
-                    interface and options to share images and their location.<br>
-                    Extra: Integrate a chat bot to help respond
-                    to users questions about chat app.
+                    What if you lost your internet connection and needed to view an old message sent? Phase 4 added the
+                    feature to have messages stored locally using async Storage. This allowed users to view older
+                    messages, once online you could send messages and receive updated messages.
+                </p>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/chat-app-online.png">
+                </div>
+                <div class="flex-description">
+                    <img class="img-box" src="./img/chat-app-offline.png">
+                </div>
+            </div>
+            <div class="flex-description p-lr">
+                <h2>BACKEND</h2>
+                <p>
+                    Here I set up Real-Time Applications '& Data Storage, which includes Authenticating users
+                    anonymously
+                    with Firebase and storing conversations in the Firestore Database.
+                </p>
+                <h2>FIREBASE</h2>
+                <p>
+                    Firebase provided by Google helps host databases, services, authentication, and integration for a
+                    variety of applications. This was perfect for the Chat app. Using their authentication users can
+                    anonymously sign in with Firebase. With Firebase: Firestore helps store conversations, photos, and
+                    videos in their database. Very helpful when need to read an old message sent by a friend or
+                    yourself.
+                </p>
+                <h2>DIALOGFLOW</h2>
+                <p>
+                    Dialogflow provided by Google is a natural language understanding platform used to design and
+                    integrate a conversational user interface into mobile apps. With Dialogflow integrated into the Chat
+                    App, I was able to design a bot to respond to questions asked by users. From App related questions
+                    to very basic conversations ( eg. Hello, Can I ask you a question, What is a Chat App, )
+                </p>
+                <h2>COMMUNICATION FEATURES</h2>
+                <p>
+                    Providing users with the ability to send Images, and take photos from their device library or device
+                    camera. Using Google Firebase Cloud Storage to store images and send messages via Gifted chat.
+                    Making use of Reacts Native map to allow users to send current location in a map view via Gifted
+                    chat.
                 </p>
             </div>
             <div class="flex-layout layout p-lr">
@@ -50,74 +134,35 @@
                 </div>
             </div>
             <div class="flex-description p-lr">
-                <h3>FIREBASE</h3>
-                <p>
-                    Firebase provided by Google helps host databases, services, authentication, and integration
-                    for
-                    a variety of applications.<br>
-                    This was a perfect for the Chat app. Using there authentication users can anonymously
-                    sign-in
-                    with Firebase.<br>
-                    With Firebase: Firestore helps store conversations, photos and videos to their database.
-                    Very
-                    helpful when need to read a old message sent by a friend or self.
-                </p>
-                <h3>DIALOGFLOW</h3>
-                <p>
-                    Dialogflow provided by Google is a natural language understanding platform used to design
-                    and
-                    integrate a conversational user interface into mobile apps.<br>
-                    With Dialogflow integrated into the Chat App, I was able to design a bot to respond to
-                    questions
-                    asked by users. From App related questions to very basic conversations ( eg. Hello, Can I
-                    ask
-                    you a question, What is Chat App, )
-                </p>
-            </div>
-            <div class="flex-description p-lr">
-                <h3>CLIENT SIDE</h3>
-                <p>
-                    First I need to set up a development environment to work with, React Native and Expo was
-                    used.
-                    Designing the apps UI '& Accessibility functionality with Native UI components and chat
-                    features
-                    from the Gifted Chat library. Once the layout was established I needed to connect the
-                    backend to
-                    the
-                    app so users could sign-in and message.<br>
-                    What if you lost your internet connection and needed to view an old message sent?<br>
-                    Phase 4 added the feature to have messages stored locally using async Storage. This allowed
-                    users to
-                    view older messages, once online you could send messages and receive updated messages.<br>
-                    All that was left was to provide users with the ability to send Images, take photos, and
-                    send
-                    their
-                    location.
-                </p>
-                <div class="img-box" style="background-image: url('./img/chat-app-bg.gif');"></div>
-            </div>
-            <div class="flex-description p-lr">
                 <h3>CHALLENGES</h3>
                 <p>
-                    When looking back integrating the chat bot was the most challenging and fun experiences.
-                    Since
-                    this
-                    was the first time I added a extra feature that was not in the main objective. Finding ways
-                    to
-                    get
-                    it to work with gifted chat, learning about hiding secret keys through environment
-                    variables. I
-                    had
-                    to really search though multiple documentations, took lots of trial and error but in the end
-                    I
-                    learned so much from it.
+                    When looking back integrating the chatbot was the most challenging and fun experience. Since this
+                    was the first time I added an extra feature that was not in the main objective. Finding ways to get
+                    it to work with gifted chat, learning about hiding secret keys through environment variables. I had
+                    to search through multiple documents, took lots of trial and error but in the end, I learned so much
+                    from it.
                 </p>
                 <h4>DURATION</h4>
                 <p>
                     Development of Chat App had its ups and down with 2 weeks for its completion.
                 </p>
+            </div>
+            <div class="flex-description p-lr">
+                <h4>LOOKING BACK</h4>
+                <p>
+                    The Chat app's objective is to provide users with a chat interface and options to share images and
+                    their location. Furthermore adding a chatbot feature so users can be informed of features and
+                    descriptions within the application.
+                </p>
+                <p>
+                    Next time I would like to tackle multiple chats, this means users can have saved private messages
+                    and public group messages. It would help complete the goal of a Chat app, other smaller changes
+                    would be adding resizing of fonts, and image backgrounds besides set colors.
+                </p>
+            </div>
+            <div class="flex-description p-lr">
                 <h4>CREDITS</h4>
-                <p class="m-b-3">
+                <p>
                     Lead Developer: Michael Pietroski<br>
                     Tutor: Rylan Albach<br>
                     Mentor: Enrique Gonzalez
