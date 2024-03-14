@@ -588,6 +588,7 @@ button:hover,
 
   .img-box {
     margin: 0px;
+    border-radius: 45px;
   }
 
   .jc {
@@ -652,6 +653,10 @@ button:hover,
     -ms-flex-pack: center;
     justify-content: center;
   }
+  .flip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media all and (min-width: 375px) and (max-width: 720px) {
@@ -668,6 +673,7 @@ button:hover,
 
   .img-box {
     margin: 0px;
+    border-radius: 60px;
   }
 
   .jc {
@@ -727,6 +733,10 @@ button:hover,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .flip {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
@@ -798,6 +808,10 @@ button:hover,
   .img-select {
     width: 640px;
   }
+  .flip {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 @media all and (min-width: 780px) and (max-width: 1020px) {
@@ -855,11 +869,16 @@ button:hover,
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -ms-flex-flow: row;
+    flex-flow: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .img-box {
+    width: 350px;
+    border-radius: 50px;
+    margin: auto;
   }
 
   .img-select {
@@ -910,11 +929,16 @@ button:hover,
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -ms-flex-flow: row;
+    flex-flow: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+  }
+  .img-box {
+    width: 400px;
+    border-radius: 50px;
+    margin: auto;
   }
 
 }
@@ -947,11 +971,17 @@ button:hover,
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    -ms-flex-flow: row;
+    flex-flow: row;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    gap: 12px;
+  }
+  .img-box {
+    width: 600px;
+    border-radius: 50px;
+    margin: auto;
   }
 
 
