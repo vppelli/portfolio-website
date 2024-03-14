@@ -24,7 +24,7 @@
                     style="width: 280px; border-radius: 85px;">
                 <div class="flex-description p-lr m-tb" style="width: fit-content;">
                     <h3>
-                        FULL STACK DEVELOPER '& <span class="f-a">3D ARTIST</span>
+                        FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span>
                     </h3>
                     <p>
                         My name is Michael Pietroski.<br>
@@ -35,9 +35,9 @@
                 </div>
             </div>
             <div class="flex-layout" id="about">
-                <div class="flex-description layout p-lr m-lr" style="width: 900px;">
+                <div class="flex-description layout p-lr m-lr" style="width: 1200px;">
                     <h1>About me</h1>
-                    <p>
+                    <p style="text-align: center;">
                         As a former 3D Modeler turned web developer, creating prototypes, render-ready assets, and
                         high-quality textures for games and simulators. Using this knowledge I've learned to create
                         website concepts into working prototypes, from simple javascript apps to Movie listing web
@@ -68,14 +68,14 @@
                     <a href="./files/MICHAEL-PIETROSKI-resume.pdf" class="btn btn-flipped" download>DOWNLOAD
                         RESUME
                     </a>
-                    <p>
+                    <p style="text-align: center;">
                         Let's get in touch, contact me through my <a href="mailto:mpworkplace@gmail.com">Portfolio</a>
                         or my
                         <a href="mailto:mpworkplace@gmail.com">Email.</a>
                         Can't wait to tell you more about me and learn more about your creative vision.
                     </p>
                     <h1>More About Me</h1>
-                    <p>
+                    <p style="text-align: center;">
                         I have a strong background in Art, having completed 2 years of courses in Architecture at
                         Essex
                         County
@@ -99,216 +99,442 @@
                 </div>
             </div>
             <div class="flex-layout" id="work">
-                <div class="focus-layout">
-                    <h1 class="font-position m-tb title">ART</h1>
+                <div id="artbtn" class="focus-layout" onclick="showArt()">
+                    <h1 id="artfont" class="m-tb title font-position">ART</h1>
                 </div>
-                <div class="focus-layout current-layout">
-                    <h1 class="m-tb title">CODE</h1>
+                <div id="codebtn" class="focus-layout-right current-layout" onclick="showCode()">
+                    <h1 id="codefont" class="m-tb title">CODE</h1>
                 </div>
             </div>
-            <div class="p-lr layout code" style="grid-auto-flow: row;">
+            <div class="p-lr layout" id="code" style="grid-auto-flow: row;">
                 <a class="pannel" href="https://github.com/vppelli/portfolio-website"
                     style="background-image: url('./img/img-webportfolio.png'); background-position: center; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            Portfolio Webpage The one you are currently on!
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            PORTFOLIO - WEBPAGE
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                This web page uses HTML, Javascript, and CSS. The thought process in designing my
+                                portfolio was “Here I am”. Always be able to locate information about me no matter where
+                                you are on the page. Presenting an easy way to contact me and see all my work.
+                            </p>
+                            <h1 class="underline">
+                                PORTFOLIO - WEBPAGE
+                            </h1>
+                        </div>
                     </div>
                 </a>
                 <a class="pannel" href="https://github.com/vppelli/Pokedex-app"
                     style="background-image: url('./img/img-pokedex.png'); background-position: center; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            Pokedex-app is a simple JavaScript app using the PokeAPI to displayed information about
-                            selected Pokemon.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            POKEDEX
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">HTML</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Bootstrap</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                Pokedex-app is a simple JavaScript app using the PokeAPI to displayed information about
+                                selected Pokemon.
+                            </p>
+                            <h1 class="underline">
+                                POKEDEX
+                            </h1>
+                        </div>
                     </div>
                 </a>
                 <a class="pannel" href="https://github.com/vppelli/movie_api"
                     style="background-image: url('./img/img-api.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            The web application will provide users with access to information about different movies,
-                            directors, and genres. Users will be able to sign up, update their personal information, and
-                            create a list of their favorite movies.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            MOVIEAPI
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">NodeJS</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">REST</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                The web application will provide users with access to information about different
+                                movies,
+                                directors, and genres. Users will be able to sign up, update their personal information,
+                                and
+                                create a list of their favorite movies.
+                            </p>
+                            <h1 class="underline">
+                                MOVIEAPI
+                            </h1>
+                        </div>
                     </div>
                 </a>
                 <a class="pannel" href="https://github.com/vppelli/movie_client"
                     style="background-image: url('./img/img-movie.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            This React web application provides users with access to information about different movies,
-                            directors, and genres. Users can sign up, update their personal information, and create a
-                            list of their favorite movies.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            MOVIEMIKE
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Bootstrap</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                This React web application provides users with access to information about different
+                                movies,
+                                directors, and genres. Users can sign up, update their personal information, and create
+                                a
+                                list of their favorite movies. Data from MoviesAPI.
+                            </p>
+                            <h1 class="underline">
+                                MOVIEMIKE
+                            </h1>
+                        </div>
                     </div>
                 </a>
                 <a class="pannel" href="https://github.com/vppelli/meet"
                     style="background-image: url('./img/img-meet.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            To build a serverless, progressive web application (PWA) with React using a test-driven
-                            development (TDD) technique. The application uses the Google Calendar API to fetch upcoming
-                            events.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            MEETAPP
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PWA</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                Welcome to the Meet App, objective to build a serverless, progressive web application
+                                (PWA) with React using a test-driven
+                                development (TDD) technique. The application uses the Google Calendar API to fetch
+                                upcoming
+                                events.
+                            </p>
+                            <h1 class="underline">
+                                MEETAPP
+                            </h1>
+                        </div>
                     </div>
                 </a>
                 <a class="pannel" href="./chat-app.html"
                     style="background-image: url('./img/img-chat.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            The Chat App lets users chat with others. Users can send images, take photos, send their
-                            location, and talk to a chatbot. Using Firebase to store messages, and images, while using
-                            Dialogflow for the in-app chatbot.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            CHATAPP
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">React Native</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Expo</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                The Chat App lets users chat with others. Users can send images, take photos, send their
+                                location, and talk to a chatbot. Using Firebase to store messages, and images, while
+                                using
+                                Dialogflow for the in-app chatbot.
+                            </p>
+                            <h1 class="underline">
+                                CHATAPP
+                            </h1>
+                        </div>
                     </div>
                 </a>
-                <a class="pannel" href="https://github.com/vppelli/meet"
+                <a class="pannel" href="https://github.com/vppelli/movie_angular_client"
                     style="background-image: url('./img/img-angular.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            This Angular application provides users with access to information about different movies,
-                            directors, and genres. Users can sign up, update their personal information, and create a
-                            list of their favorite movies.
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            MOVIEANGULAR
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">Angular</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">SASS/SCSS</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                This Angular application provides users with access to information about different
+                                movies,
+                                directors, and genres. Users can sign up, update their personal information, and create
+                                a
+                                list of their favorite movies.
+                            </p>
+                            <h1 class="underline">
+                                MOVIEANGULAR
+                            </h1>
+                        </div>
                     </div>
                 </a>
-                <a class="pannel" href="https://github.com/vppelli/meet"
+                <a class="pannel" href="https://github.com/vppelli/predecessor-discord-themes"
                     style="background-image: url('./img/img-pred.png'); background-position: 50% 50%; background-size: cover;">
-                    <div class="align p-lr p-tb">
-                        <p class="font-color">
-                            Customize Discord with Predecessor Hero themes. There are pre-made themes for each hero, you
-                            can also further change them to your liking, Instruction inside the theme.css files! Enjoy
-                        </p>
-                        <p>
-                            __________________________
-                        </p>
-                        <h1>
-                            PREDECESSOR DISCORD THEMES
-                        </h1>
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-b">
+                            <span class="tag">CSS</span>
+                            <span class="tag">SASS/SCSS</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+                                Customize Discord with Predecessor Hero themes. There are pre-made themes for each hero,
+                                you
+                                can also further change them to your liking, Instruction inside the theme.css files!
+                                Enjoy
+                            </p>
+                            <h1 class="underline">
+                                PRED DISCORD THEMES
+                            </h1>
+                        </div>
                     </div>
                 </a>
             </div>
-            <div class="flex-description" style="justify-content: center; text-align: center;">
-                <h1>
-                    3D Modeling Skills
-                </h1>
-                <h3>
-                    Skills
-                </h3>
-                <ul>
-                    <li>
-                        Lighting
-                    </li>
-                    <li>
-                        Texturing
-                    </li>
-                    <li>
-                        UV Mapping
-                    </li>
-                    <li>
-                        3D Sculpting
-                    </li>
-                    <li>
-                        Graphic Design
-                    </li>
-                    <li>
-                        UI/UX Experience
-                    </li>
-                    <li>
-                        Trim / Decal workflow
-                    </li>
-                    <li>
-                        Rendering
-                    </li>
-                    <li>
-                        UE Blueprints
-                    </li>
-                    <li>
-                        Create and editing Materials
-                    </li>
-                </ul>
-                <h1>
-                    Programming
-                </h1>
-                <h3>
-                    Skills
-                </h3>
-                <ul>
-                    <li>
-                        Prototyping
-                    </li>
-                    <li>
-                        Development Testing
-                    </li>
-                    <li>
-                        Database and SQL
-                    </li>
-                    <li>
-                        Git version control
-                    </li>
-                    <li>
-                        Server-Side Programming
-                    </li>
-                    <li>
-                        Client-Side Programming
-                    </li>
-                    <li>
-                        UI/UX Experience
-                    </li>
-                    <li>
-                        API
-                    </li>
-                    <li>
-                        Node.js
-                    </li>
-                    <li>
-                        React.js
-                    </li>
-                </ul>
+            <div class="p-lr layout hide" id="art" style="grid-auto-flow: row;">
+                <a class="pannel" href="https://www.artstation.com/artwork/wJYkQY"
+                    style="background-image: url('./img/img-car.png'); background-position: center; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">Unreal Engine 4</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Hardsurface</span>
+                            <span class="tag">Highpoly</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                JADE GR
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a class="pannel" href="https://www.artstation.com/artwork/g0RdR8"
+                    style="background-image: url('./img/img-otremor.png'); background-position: center; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">Unreal Engine 5</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Hardsurface</span>
+                            <span class="tag">Lowpoly</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                O TREMOR
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a class="pannel" href="https://www.artstation.com/artwork/48LKqL"
+                    style="background-image: url('./img/img-bike.png'); background-position: 50% 50%; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Marmoset Toolbag</span>
+                            <span class="tag">Hardsurface</span>
+                            <span class="tag">Highpoly</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                TRONBIKE
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a class="pannel" href="https://www.artstation.com/artwork/Dv5W6e"
+                    style="background-image: url('./img/img-moba.png'); background-position: 50% 50%; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">3D Environment</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Unreal Engine 4</span>
+                            <span class="tag">Lowpoly</span>
+                            <span class="tag">Hardsurface</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                MOBA SCENE
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a class="pannel" href="https://www.artstation.com/artwork/ela69Z"
+                    style="background-image: url('./img/img-etech.png'); background-position: 50% 50%; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">3D Environment</span>
+                            <span class="tag">Unreal Engine 5</span>
+                            <span class="tag">Lowpoly</span>
+                            <span class="tag">Hardsurface</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                TECH SECURITY
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+                <a class="pannel" href="https://www.artstation.com/artwork/PeN34Z"
+                    style="background-image: url('./img/img-sector.png'); background-position: 50% 50%; background-size: cover;">
+                    <div class="flex-description p-lr p-tb">
+                        <div class="m-t">
+                            <span class="tag">Maya</span>
+                            <span class="tag">3D Environment</span>
+                            <span class="tag">Unreal Engine 4</span>
+                            <span class="tag">Substance Painter</span>
+                            <span class="tag">Hardsurface</span>
+                            <span class="tag">Organic</span>
+                        </div>
+                        <div class="align flex-description">
+                            <p class="font-color">
+
+                            </p>
+                            <h1 class="underline">
+                                SECTOR 02
+                            </h1>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="p-lr layout" style="grid-auto-flow: row;">
+                <div class="strip">
+                    <div class="flex-content">
+                        <div class="flex-description m-tb p-lr p-tb">
+                            <h1 class="accent underline">
+                                FRONTEND - KNOWLEDGE
+                            </h1>
+                            <p>
+                                <span class="tag">HTML</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">React</span>
+                                <span class="tag">React Native</span>
+                                <span class="tag">Redux</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">Expo</span>
+                                <span class="tag">PWA</span>
+                                <span class="tag">jQuery</span>
+                            </p>
+                            <h4>UI/UX</h4>
+                            <p>
+                                <span class="tag">Responsive Design</span>
+                                <span class="tag">Web Assessibility</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Bootstrap</span>
+                                <span class="tag">SASS/SCSS</span>
+                            </p>
+                        </div>
+                        <div class="flex-description p-lr p-tb">
+                            <h1 class="accent underline">
+                                BACKEND - KNOWLEDGE
+                            </h1>
+                            <p>
+                                <span class="tag">NodeJS</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">API</span>
+                                <span class="tag">Data Security</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Google Firebase</span>
+                                <span class="tag">Google Dialogflow</span>
+                                <span class="tag">Heroku</span>
+                                <span class="tag">Netlify</span>
+                                <span class="tag">JSON</span>
+                                <span class="tag">REST</span>
+                            </p>
+                            <h4>DATABASE</h4>
+                            <p>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">MongoDB</span>
+                            </p>
+                        </div>
+                        <div class="flex-description p-lr p-tb">
+                            <h1 class="accent underline">
+                                CODING SOFTWARE
+                            </h1>
+                            <p>
+                                <span class="tag">VSCode</span>
+                                <span class="tag">GitHub</span>
+                                <span class="tag">Postman</span>
+                                <span class="tag">PostGresSQL</span>
+                                <span class="tag">Andriod Studio</span>
+                            </p>
+                            <h4>DESIGN</h4>
+                            <p>
+                                <span class="tag">Figma</span>
+                                <span class="tag">Lunacy</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="strip">
+                    <div class="flex-content">
+                        <div class="flex-description p-lr p-tb">
+                            <h1 class="accent underline">
+                                3D - KNOWLEDGE
+                            </h1>
+                            <p>
+                                <span class="tag">3D Environment</span>
+                                <span class="tag">Texturing</span>
+                                <span class="tag">UV</span>
+                                <span class="tag">Lowpoly</span>
+                                <span class="tag">Highpoly</span>
+                                <span class="tag">Stylized</span>
+                                <span class="tag">Hardsurface</span>
+                                <span class="tag">Organic</span>
+                            </p>
+                            <h4>WORKFLOW '& MATERIALS</h4>
+                            <p>
+                                <span class="tag">PBR</span>
+                                <span class="tag">Freeflow</span>
+                                <span class="tag">Decals</span>
+                                <span class="tag">Tile Sheets</span>
+                                <span class="tag">UE Materials</span>
+                                <span class="tag">UE Instance</span>
+                                <span class="tag">UE Functions</span>
+                            </p>
+                        </div>
+                        <div class="flex-description p-lr p-tb">
+                            <h1 class="accent underline">
+                                ART SOFTWARE
+                            </h1>
+                            <p>
+                                <span class="tag">Photoshop</span>
+                                <span class="tag">Substance Painter</span>
+                                <span class="tag">Substance Designer</span>
+                                <span class="tag">Marmoset Toolbag</span>
+                                <span class="tag">Quixel Mixer</span>
+                                <span class="tag">Plastic SCM</span>
+                                <span class="tag">Perforce</span>
+                                <span class="tag">GitHub</span>
+                                <span class="tag">Unreal Engine 4</span>
+                                <span class="tag">Unreal Engine 5</span>
+                                <span class="tag">Unity</span>
+                            </p>
+                            <h4>3D MODELING</h4>
+                            <p>
+                                <span class="tag">Maya</span>
+                                <span class="tag">Blender</span>
+                                <span class="tag">Plasticity</span>
+                                <span class="tag">AutoCAD</span>
+                                <span class="tag">ZBrush</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="flex-layout p-lr min-width" id="contact">
                 <div class="flex-description" style="text-align: center;">
@@ -317,10 +543,12 @@
                     </p>
                     <form action="form-send" method="post" id="contact-form" class="contact-form">
                         <div class="layout">
-                            <input type="email" placeholder="Email:" id="email" required>
-                            <input type="tel" id="tel" placeholder="Telephone:">
-                            <textarea maxlength="250" rows="3" placeholder="Type your Message:" id="msg"
-                                required></textarea>
+                            <input type="email" placeholder="Email:" id="email" required
+                                style="background-color: rgba(0, 0, 0, 0);">
+                            <input type="tel" id="tel" placeholder="Telephone:"
+                                style="background-color: rgba(0, 0, 0, 0);">
+                            <textarea maxlength="250" rows="3" placeholder="Type your Message:" id="msg" required
+                                style="background-color: rgba(0, 0, 0, 0);"></textarea>
                         </div>
                         <input type="submit" value="SEND" class="btn btn-flipped"
                             style="border: 0px; margin-top: 12px;">
@@ -348,6 +576,9 @@
                     <a href="https://www.artstation.com/mpietros" target="_blank" class="m-tb">
                         <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon icon">
                     </a>
+                    <a href="https://medium.com/@vppelli" target="_blank" class="m-tb">
+                        <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon icon">
+                    </a>
                 </div>
             </div>
         </div>
@@ -364,7 +595,7 @@
             </div>
             <div class="profile-img" alt="Michael Pietroski's Portrait"></div>
             <h1 class="m-lr">MICHAEL PIETROSKI</h1>
-            <h2>FULL STACK DEVELOPER '& 3D ARTIST</h2>
+            <h2>FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
             <p>
                 Hello, I am Michael Pietroski, a Full Stack Developer and 3D Modeler. In 3D Modeling, perspective and
                 emotions are important. This helps me build connections with my co-workers and customers and improve
@@ -383,6 +614,9 @@
                 </a>
                 <a href="https://www.artstation.com/mpietros" target="_blank">
                     <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
                 </a>
             </div>
             <div class="button-layout">
@@ -405,6 +639,9 @@
                 </a>
                 <a href="https://www.artstation.com/mpietros" target="_blank" class="layout">
                     <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon" style="rotate: -90deg;">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon" style="rotate: -90deg;">
                 </a>
                 <a class="btn btn-flipped" href="./files/MICHAEL-PIETROSKI-resume.pdf" download>RESUME</a>
             </div>
