@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.mini.css">
 
 </head>
 
@@ -21,7 +21,7 @@
             </div>
             <div class="flex-layout p-lr layout">
                 <img src="https://avatars.githubusercontent.com/u/138417934?v=4" alt="Michael Pietroski's Portrait"
-                    style="width: 280px; border-radius: 85px;">
+                    style="width: 240px; border-radius: 285px;">
                 <div class="flex-description p-lr m-tb" style="width: fit-content;">
                     <h3>
                         FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span>
@@ -31,6 +31,8 @@
                         I am a Web developer '& 3D Artist<br>
                         Located in New Jersey.
                     </p>
+                    <p>Languages: English, Portuguese, and Spanish</p>
+                    <p>Full-time, Freelance</p>
                     <a href="./index.html#work" class="f-a">See my work</a>
                 </div>
             </div>
@@ -154,6 +156,7 @@
                             <span class="tag">NodeJS</span>
                             <span class="tag">Express</span>
                             <span class="tag">JavaScript</span>
+                            <span class="tag">MongoDB</span>
                             <span class="tag">API</span>
                             <span class="tag">REST</span>
                         </div>
@@ -427,11 +430,13 @@
                                 <span class="tag">Expo</span>
                                 <span class="tag">PWA</span>
                                 <span class="tag">jQuery</span>
+                                <span class="tag">Jest Cucumber</span>
+                                <span class="tag">Puppeteer</span>
                             </p>
                             <h4>UI/UX</h4>
                             <p>
                                 <span class="tag">Responsive Design</span>
-                                <span class="tag">Web Assessibility</span>
+                                <span class="tag">Web Accessibility</span>
                                 <span class="tag">CSS</span>
                                 <span class="tag">Bootstrap</span>
                                 <span class="tag">SASS/SCSS</span>
@@ -558,12 +563,10 @@
                 <div class="flex-description p-lr m-tb" style="max-width: 300px;">
                     <p class="switch">
                         Michael Pietroski<br>
-                        198-200 Hillside Ave<br>
-                        07108, Newark<br>
-                        New Jersey<br>
+                        Newark, NJ
                     </p>
-                    <a href="tel:+19736527269">Call me</a>
-                    <a href="mailto:mpworkplace@gmail.com">Email me</a>
+                    <a href="tel:+19736527269">Phone</a>
+                    <a href="mailto:mpworkplace@gmail.com">Email</a>
                 </div>
                 <div class="flex-layout p-lr m-tb">
                     <a href="https://github.com/vppelli" target="_blank" class="m-tb">
@@ -581,49 +584,8 @@
                 </div>
             </div>
         </div>
-        <div class="profile-sidebar sticky-block" id="full">
-            <div class="button-layout">
-                <button onclick="hideSidebar()">
-                    <img src="./img/collapse.svg" alt="Collapse button">
-                </button>
-            </div>
-            <div class="button-layout">
-                <a class="btn" href="./index.html#work">SHOWCASE</a>
-                <a class="btn" href="./index.html#about">ABOUT</a>
-                <a class="btn" href="./index.html#contact">CONTACT</a>
-            </div>
-            <div class="profile-img" alt="Michael Pietroski's Portrait"></div>
-            <h1 class="m-lr">MICHAEL PIETROSKI</h1>
-            <h2>FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
-            <p>
-                Hello. I am Michael Pietroski, a Full-Stack Developer and 3D Modeler. Perspective and emotions are
-                essential in 3D modeling. This experience helps me build connections with my co-workers and customers
-                and improve user experience and code. I cannot wait to bring customers' creative visions to life.
-            </p>
-            <div class="button-layout">
-                <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
-                <a class="btn" href="tel:+19736527269">CALL</a>
-            </div>
-            <div class="icon-layout">
-                <a href="https://github.com/vppelli" target="_blank">
-                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
-                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
-                </a>
-                <a href="https://www.artstation.com/mpietros" target="_blank">
-                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
-                </a>
-                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
-                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
-                </a>
-            </div>
-            <div class="button-layout">
-                <a class="btn" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
-            </div>
-        </div>
         <div class="mini-sidebar sticky-block is-hidden" id="mini">
-            <div class="button-sideways-layout">
+            <div class="button-sideways-layout" id="mini-inner">
                 <button onclick="showSidebar()" class="arrow">
                     <img src="./img/expand.svg" alt="Expand button">
                 </button>
@@ -645,9 +607,53 @@
                 <a class="btn btn-flipped" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">RESUME</a>
             </div>
         </div>
+        <div class="profile-sidebar sticky-block" id="full">
+            <div class="inner-sidebar" id="full-inner">
+                <div class="button-layout">
+                    <button onclick="hideSidebar()">
+                        <img src="./img/collapse.svg" alt="Collapse button">
+                    </button>
+                </div>
+                <div class="button-layout">
+                    <a class="btn" href="./index.html#work">SHOWCASE</a>
+                    <a class="btn" href="./index.html#about">ABOUT</a>
+                    <a class="btn" href="./index.html#contact">CONTACT</a>
+                </div>
+                <div class="profile-img" alt="Michael Pietroski's Portrait"></div>
+                <h1 class="m-lr">MICHAEL PIETROSKI</h1>
+                <h2>FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
+                <p>
+                    Hello. I am Michael Pietroski, a Full-Stack Developer and 3D Modeler. Perspective and emotions are
+                    essential in 3D modeling. This experience helps me build connections with my co-workers and
+                    customers
+                    and improve user experience and code. I cannot wait to bring customers' creative visions to life.
+                </p>
+                <div class="button-layout">
+                    <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
+                    <a class="btn" href="tel:+19736527269">CALL</a>
+                </div>
+                <div class="icon-layout">
+                    <a href="https://github.com/vppelli" target="_blank">
+                        <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
+                    </a>
+                    <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                        <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
+                    </a>
+                    <a href="https://www.artstation.com/mpietros" target="_blank">
+                        <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                    </a>
+                    <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                        <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
+                    </a>
+                </div>
+                <div class="button-layout">
+                    <a class="btn" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <script src="./js/main.js"></script>
+    <script src="./js/main.mini.js"></script>
 </body>
 
 </html>
