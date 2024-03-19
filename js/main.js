@@ -1,4 +1,4 @@
-let scrollPos = 0;
+// let scrollPos = 0;
 const fullSideBar = document.getElementById("full");
 const miniSideBar = document.getElementById("mini");
 const fullInner = document.getElementById("full-inner");
@@ -9,7 +9,7 @@ const artBtn = document.getElementById("artbtn");
 const codeBtn = document.getElementById("codebtn");
 const codefont = document.getElementById("codefont");
 const artfont = document.getElementById("artfont");
-const nav = document.querySelector('.flex-layout');
+// const nav = document.querySelector('.flex-layout');
 
 let showSidebar = () => {
     fullSideBar.classList.remove("is-hidden");
@@ -42,31 +42,31 @@ let showCode = () => {
     codefont.classList.remove("font-position");
 }
 
-let checkPosition = () => {
-    let windowY = window.scrollY;
-    if (windowY < scrollPos) {
-        // Scrolling UP
-        hideSidebar();
-    } else {
-        // Scrolling DOWN
-        hideSidebar();
-    }
-    scrollPos = windowY;
-}
+// let checkPosition = () => {
+//     let windowY = window.scrollY;
+//     if (windowY < scrollPos) {
+//         // Scrolling UP
+//         hideSidebar();
+//     } else {
+//         // Scrolling DOWN
+//         hideSidebar();
+//     }
+//     scrollPos = windowY;
+// }
 
-function debounce(func, wait = 10, immediate = true) {
-    let timeout;
-    return function () {
-        let context = this, args = arguments;
-        let later = function () {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-        };
-        let callNow = immediate && !timeout;
-        clearTimeout(timeout);
-        timeout = setTimeout(later, wait);
-        if (callNow) func.apply(context, args);
-    };
-};
+// function debounce(func, wait = 10, immediate = true) {
+//     let timeout;
+//     return function () {
+//         let context = this, args = arguments;
+//         let later = function () {
+//             timeout = null;
+//             if (!immediate) func.apply(context, args);
+//         };
+//         let callNow = immediate && !timeout;
+//         clearTimeout(timeout);
+//         timeout = setTimeout(later, wait);
+//         if (callNow) func.apply(context, args);
+//     };
+// };
 
-window.addEventListener('scroll', debounce(checkPosition));
+// window.addEventListener('scroll', debounce(checkPosition));
