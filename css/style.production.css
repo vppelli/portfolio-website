@@ -90,7 +90,7 @@ span {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  gap: 100px;
+  gap: 300px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -208,6 +208,22 @@ span {
   background-color: var(--bg-color);
   -webkit-box-shadow: inset 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation: slidein 1s;
+          animation: slidein 1s;
+}
+.inner-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 32px;
+  height: var(--windowsize);
 }
 
 .mini-sidebar {
@@ -232,6 +248,8 @@ span {
   background-color: var(--bg-color);
   -webkit-box-shadow: inset 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-animation: slidein 1s;
+          animation: slidein 1s;
 }
 
 .profile-img {
@@ -423,8 +441,6 @@ button:hover,
   -ms-flex-positive: 1;
   flex-grow: 1;
   height: 300px;
-  -webkit-box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -539,8 +555,13 @@ button:hover,
   flex-grow: 1;
 }
 
-.hide,
+.hide {
+  display: none;
+}
+
 .is-hidden {
+  -webkit-animation: slideout 500ms;
+          animation: slideout 500ms;
   display: none;
 }
 
@@ -573,6 +594,50 @@ button:hover,
   text-decoration-thickness: .5px;
 }
 
+@-webkit-keyframes slideout {
+  from {
+    opacity: 1;
+  }
+  to {
+    width: 0px;
+    opacity: 0;
+  }
+}
+
+@keyframes slideout {
+  from {
+    opacity: 1;
+  }
+  to {
+    width: 0px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slidein {
+  0% {
+    width: 0px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* Screen Sizes -------------------------------------- */
 @media all and (max-width: 375px) {
   :root {
@@ -584,6 +649,9 @@ button:hover,
     /* window size */
     --windowsize: 600px;
     --windowsizeX: 0px;
+  }
+  .flex-content {
+    gap: 100px;
   }
 
   .img-box {
@@ -654,8 +722,13 @@ button:hover,
     justify-content: center;
   }
   .flip {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -669,6 +742,9 @@ button:hover,
     /* window size */
     --windowsize: 600px;
     --windowsizeX: 0px;
+  }
+  .flex-content {
+    gap: 100px;
   }
 
   .img-box {
@@ -735,8 +811,13 @@ button:hover,
     justify-content: center;
   }
   .flip {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -751,6 +832,10 @@ button:hover,
     --windowsize: 600px;
     --windowsizeX: 0px;
   }
+  .flex-content {
+    gap: 200px;
+  }
+
   .img-box {
     margin: 0px;
   }
@@ -809,8 +894,13 @@ button:hover,
     width: 640px;
   }
   .flip {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -824,6 +914,9 @@ button:hover,
     /* window size */
     --windowsize: 600px;
     --windowsizeX: 0px;
+  }
+  .flex-content {
+    gap: 200px;
   }
 
   .jc {
@@ -897,6 +990,9 @@ button:hover,
     --windowsize: 800px;
     --windowsizeX: 0px;
   }
+  .flex-content {
+    gap: 200px;
+  }
 
   .jc {
     -webkit-box-pack: start;
@@ -953,6 +1049,9 @@ button:hover,
     /* window size */
     --windowsize: 1080px;
     --windowsizeX: 0px;
+  }
+  .flex-content {
+    gap: 300px;
   }
 
   .jc {
