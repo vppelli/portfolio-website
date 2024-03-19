@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* Custom Var ----------------------------------------------------- */
 :root {
   /* Font & Spacing Size */
@@ -27,6 +34,10 @@ svg * {
 }
 
 /* Tags ----------------------------------------------------- */
+html {
+  line-height: normal;
+}
+
 body {
   background-color: var(--bg-color);
   font-family: 'Lato', sans-serif;
@@ -75,7 +86,6 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -90,8 +100,11 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  max-width: 1920px;
+  width: 85%;
   gap: 300px;
+  -webkit-box-shadow: -2px 0 8px 0 rgba(0, 0, 0, .25);
+  box-shadow: -2px 0 8px 0 rgba(0, 0, 0, .25);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -214,21 +227,6 @@ span {
   animation: slidein 1s;
 }
 
-.inner-sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  gap: 32px;
-  height: var(--windowsize);
-}
-
 .mini-sidebar {
   -webkit-transition-duration: 2s;
   -o-transition-duration: 2s;
@@ -236,16 +234,12 @@ span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   width: 80px;
   height: var(--windowsize);
-  padding: 32px 0px 32px 0px;
+  padding: 32px 0px;
   gap: 32px;
   border-radius: 0px 0px 85px 85px;
   background-color: var(--bg-color);
@@ -339,12 +333,14 @@ button:hover,
 .btn-icon {
   padding: 4px;
   background-color: rgba(0, 0, 0, 0);
-  width: 38px;
+  width: 36px;
 }
 
 .btn-flipped {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  max-height: 140px;
 }
 
 .button-layout {
@@ -365,13 +361,9 @@ button:hover,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -662,11 +654,6 @@ button:hover,
     --windowsize: 600px;
     --windowsizeX: 0px;
   }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-  }
 
   .flex-content {
     gap: 100px;
@@ -681,8 +668,6 @@ button:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: none;
-    animation: none;
   }
 
   .profile-sidebar {
@@ -758,11 +743,6 @@ button:hover,
     --windowsize: 600px;
     --windowsizeX: 0px;
   }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-  }
 
   .flex-content {
     gap: 100px;
@@ -777,8 +757,6 @@ button:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: none;
-    animation: none;
   }
 
   .profile-sidebar {
@@ -850,11 +828,6 @@ button:hover,
     --windowsize: 600px;
     --windowsizeX: 0px;
   }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-  }
 
   .flex-content {
     gap: 200px;
@@ -868,8 +841,6 @@ button:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: none;
-    animation: none;
   }
 
   .profile-sidebar {
@@ -936,11 +907,6 @@ button:hover,
     --windowsize: 600px;
     --windowsizeX: 0px;
   }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
-  }
 
   .flex-content {
     gap: 200px;
@@ -950,8 +916,6 @@ button:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: none;
-    animation: none;
   }
 
   .profile-sidebar {
@@ -1011,13 +975,8 @@ button:hover,
     --font-lg: 24px;
     --font-title: 48px;
     /* window size */
-    --windowsize: 800px;
+    --windowsize: 600px;
     --windowsizeX: 0px;
-  }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
   }
 
   .flex-content {
@@ -1028,8 +987,10 @@ button:hover,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-animation: none;
-    animation: none;
+  }
+
+  .arrow {
+    display: none;
   }
 
   .profile-sidebar {
@@ -1074,17 +1035,26 @@ button:hover,
     --font-lg: 24px;
     --font-title: 64px;
     /* window size */
-    --windowsize: 1080px;
+    --windowsize: 800px;
     --windowsizeX: 0px;
-  }
-  .jc {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
   }
 
   .flex-content {
     gap: 300px;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .is-hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .profile-sidebar {
+    display: none;
   }
 
   .mini-sidebar {
