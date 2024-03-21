@@ -14,8 +14,76 @@
 </head>
 
 <body>
+    <div class="transition transition-1 is-active"><span class="title m-tb">MICHAEL PIETROSKI</span></div>
+
     <div class="flex-layout jc">
-        <div class="flex-content">
+        <nav class="profile-sidebar sticky-block" id="full">
+            <div class="button-layout">
+                <a onclick="hideSidebar()" class="arrow">
+                    <img src="./img/expand.svg" alt="Collapse button" class="btn btn-flipped">
+                </a>
+                <a class="btn" href="./index.html#work">SHOWCASE</a>
+                <a class="btn" href="./index.html#about">ABOUT</a>
+            </div>
+            <img src="https://avatars.githubusercontent.com/u/138417934?v=4" alt="Michael Pietroski's Portrait"
+                class="profile-img">
+            <h1 class="m-lr">MICHAEL PIETROSKI</h1>
+            <h2>FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
+            <p>
+                Hello. I am Michael Pietroski, a Full-Stack Developer and 3D Modeler. Perspective and emotions are
+                essential in 3D modeling. This experience helps me build connections with my co-workers and
+                customers
+                and improve user experience and code. I cannot wait to bring customers' creative visions to life.
+            </p>
+            <div class="button-layout">
+                <a class="btn" href="./index.html#contact">CONTACT</a>
+            </div>
+            <div class="button-layout">
+                <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
+                <a class="btn" href="tel:+19736527269">CALL</a>
+            </div>
+            <div class="icon-layout">
+                <a href="https://github.com/vppelli" target="_blank">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
+                </a>
+            </div>
+            <div class="button-layout">
+                <a class="btn" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+            </div>
+        </nav>
+        <nav class="mini-sidebar sticky-block is-hidden" id="mini">
+            <div class="button-sideways-layout">
+                <a onclick="showSidebar()" class="arrow m-lr">
+                    <img src="./img/expand.svg" alt="Expand button" class="btn btn-flipped">
+                </a>
+                <a class="btn btn-flipped" href="./index.html#work">SHOWCASE</a>
+                <a class="btn btn-flipped" href="./index.html#about">ABOUT</a>
+                <a class="btn btn-flipped" href="./index.html#contact">CONTACT</a>
+                <a href="https://github.com/vppelli" target="_blank" class="layout m-lr">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank" class="layout m-lr">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank" class="layout m-lr">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout m-lr">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
+                </a>
+                <a class="btn btn-flipped" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">RESUME</a>
+            </div>
+        </nav>
+        <main class="flex-content">
             <div class="flex-description layout p-lr">
                 <h1 class="title">MICHAEL PIETROSKI</h1>
             </div>
@@ -109,7 +177,7 @@
                 </div>
             </div>
             <div class="p-lr layout" id="code" style="grid-auto-flow: row;">
-                <a class="pannel" href="https://github.com/vppelli/portfolio-website"
+                <div class="pannel" href="https://github.com/vppelli/portfolio-website"
                     style="background-image: url('./img/img-webportfolio.png'); background-position: center; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -117,19 +185,23 @@
                             <span class="tag">JavaScript</span>
                             <span class="tag">CSS</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://github.com/vppelli/portfolio-website"
+                                target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                This web page uses HTML, Javascript, and CSS. The thought process in designing my
-                                portfolio was “Here I am”. Always be able to locate information about me no matter where
-                                you are on the page. Presenting an easy way to contact me and see all my work.
+                                When designing my portfolio, the thought process was "Always be able to locate me,"
+                                information about me no matter where you are on the page—presenting an easy way to
+                                contact me and see all my work.
                             </p>
-                            <h1 class="underline">
-                                PORTFOLIO - WEBPAGE
+                            <h1 class="underline accent">
+                                PORTFOLIO
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/Pokedex-app"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-pokedex.png'); background-position: center; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -139,18 +211,23 @@
                             <span class="tag">Bootstrap</span>
                             <span class="tag">CSS</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://vppelli.github.io/Pokedex-app/" target="_blank">DEMO</a>
+                            <a class="btn accent" href="https://github.com/vppelli/Pokedex-app"
+                                target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                Pokedex-app is a simple JavaScript app using the PokeAPI to displayed information about
+                                Pokedex-app is a simple JavaScript app that uses PokeAPI to display information about
                                 selected Pokemon.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 POKEDEX
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/movie_api"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-api.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -161,21 +238,24 @@
                             <span class="tag">API</span>
                             <span class="tag">REST</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent"
+                                href="https://movie-mikes-7b54f5710543.herokuapp.com/documentation.html"
+                                target="_blank">DEMO</a>
+                            <a class="btn accent" href="https://github.com/vppelli/movie_api" target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                The web application will provide users with access to information about different
-                                movies,
-                                directors, and genres. Users will be able to sign up, update their personal information,
-                                and
-                                create a list of their favorite movies.
+                                The API will inform users about movies, directors, and genres. Users can
+                                sign up, update their personal information, and create a list of their favorite movies.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 MOVIEAPI
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/movie_client"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-movie.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -184,21 +264,24 @@
                             <span class="tag">API</span>
                             <span class="tag">Bootstrap</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://moviemikes.netlify.app/movies" target="_blank">DEMO</a>
+                            <a class="btn accent" href="https://github.com/vppelli/movie_client"
+                                target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                This React web application provides users with access to information about different
-                                movies,
-                                directors, and genres. Users can sign up, update their personal information, and create
-                                a
-                                list of their favorite movies. Data from MoviesAPI.
+                                This React application provides users with information about movies, directors, and
+                                genres. Users can sign up, update their personal information, and create a list of their
+                                favorite films.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 MOVIEMIKE
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/meet"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-meet.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -209,21 +292,23 @@
                             <span class="tag">API</span>
                             <span class="tag">CSS</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://vppelli.github.io/meet/" target="_blank">DEMO</a>
+                            <a class="btn accent" href="https://github.com/vppelli/meet" target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                Welcome to the Meet App, objective to build a serverless, progressive web application
-                                (PWA) with React using a test-driven
-                                development (TDD) technique. The application uses the Google Calendar API to fetch
-                                upcoming
-                                events.
+                                Meet App aims to build a serverless, progressive web application with React using a
+                                test-driven development technique. The application fetches upcoming events from the
+                                Google Calendar API.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 MEETAPP
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="./chat-app.html"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-chat.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -231,20 +316,22 @@
                             <span class="tag">JavaScript</span>
                             <span class="tag">Expo</span>
                         </div>
+                        <div class="button-layout">
+                            <a class="btn accent page" href="./chat-app.html">CASE STUDY</a>
+                            <a class="btn accent" href="https://github.com/vppelli/chat-app" target="_blank">GITHUB</a>
+                        </div>
                         <div class="align flex-description">
                             <p class="font-color">
-                                The Chat App lets users chat with others. Users can send images, take photos, send their
-                                location, and talk to a chatbot. Using Firebase to store messages, and images, while
-                                using
-                                Dialogflow for the in-app chatbot.
+                                The Chat App lets users send images, photos, locations, and talk with a chatbot. I can
+                                store messages and pictures using Firebase and Dialogflow for the in-app chatbot.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 CHATAPP
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/movie_angular_client"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-angular.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
@@ -252,6 +339,12 @@
                             <span class="tag">TypeScript</span>
                             <span class="tag">API</span>
                             <span class="tag">SASS/SCSS</span>
+                        </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://vppelli.github.io/movie_angular_client/welcome"
+                                target="_blank">DEMO</a>
+                            <a class="btn accent" href="https://github.com/vppelli/movie_angular_client"
+                                target="_blank">GITHUB</a>
                         </div>
                         <div class="align flex-description">
                             <p class="font-color">
@@ -261,18 +354,22 @@
                                 a
                                 list of their favorite movies.
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 MOVIEANGULAR
                             </h1>
                         </div>
                     </div>
-                </a>
-                <a class="pannel" href="https://github.com/vppelli/predecessor-discord-themes"
+                </div>
+                <div class="pannel"
                     style="background-image: url('./img/img-pred.png'); background-position: 50% 50%; background-size: cover;">
                     <div class="flex-description p-lr p-tb">
                         <div class="m-b">
                             <span class="tag">CSS</span>
                             <span class="tag">SASS/SCSS</span>
+                        </div>
+                        <div class="button-layout">
+                            <a class="btn accent" href="https://github.com/vppelli/predecessor-discord-themes"
+                                target="_blank">GITHUB</a>
                         </div>
                         <div class="align flex-description">
                             <p class="font-color">
@@ -281,12 +378,12 @@
                                 can also further change them to your liking, Instruction inside the theme.css files!
                                 Enjoy
                             </p>
-                            <h1 class="underline">
+                            <h1 class="underline accent">
                                 PRED DISCORD THEMES
                             </h1>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
             <div class="p-lr layout hide" id="art" style="grid-auto-flow: row;">
                 <a class="pannel" href="https://www.artstation.com/artwork/wJYkQY"
@@ -560,7 +657,7 @@
                     </form>
                 </div>
             </div>
-            <div class="flex-layout footer ">
+            <footer class="flex-layout footer ">
                 <div class="flex-description p-lr m-tb" style="max-width: 300px;">
                     <p class="switch">
                         Michael Pietroski<br>
@@ -583,74 +680,8 @@
                         <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon icon">
                     </a>
                 </div>
-            </div>
-        </div>
-        <div class="profile-sidebar sticky-block" id="full">
-            <div class="button-layout">
-                <a onclick="hideSidebar()" class="arrow">
-                    <img src="./img/expand.svg" alt="Collapse button" class="btn btn-flipped">
-                </a>
-                <a class="btn" href="./index.html#work">SHOWCASE</a>
-                <a class="btn" href="./index.html#about">ABOUT</a>
-            </div>
-            <img src="https://avatars.githubusercontent.com/u/138417934?v=4" alt="Michael Pietroski's Portrait"
-                class="profile-img">
-            <h1 class="m-lr">MICHAEL PIETROSKI</h1>
-            <h2>FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
-            <p>
-                Hello. I am Michael Pietroski, a Full-Stack Developer and 3D Modeler. Perspective and emotions are
-                essential in 3D modeling. This experience helps me build connections with my co-workers and
-                customers
-                and improve user experience and code. I cannot wait to bring customers' creative visions to life.
-            </p>
-            <div class="button-layout">
-                <a class="btn" href="./index.html#contact">CONTACT</a>
-            </div>
-            <div class="button-layout">
-                <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
-                <a class="btn" href="tel:+19736527269">CALL</a>
-            </div>
-            <div class="icon-layout">
-                <a href="https://github.com/vppelli" target="_blank">
-                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
-                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
-                </a>
-                <a href="https://www.artstation.com/mpietros" target="_blank">
-                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
-                </a>
-                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
-                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
-                </a>
-            </div>
-            <div class="button-layout">
-                <a class="btn" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
-            </div>
-        </div>
-        <div class="mini-sidebar sticky-block is-hidden" id="mini">
-            <div class="button-sideways-layout">
-                <a onclick="showSidebar()" class="arrow m-lr">
-                    <img src="./img/expand.svg" alt="Expand button" class="btn btn-flipped">
-                </a>
-                <a class="btn btn-flipped" href="./index.html#work">SHOWCASE</a>
-                <a class="btn btn-flipped" href="./index.html#about">ABOUT</a>
-                <a class="btn btn-flipped" href="./index.html#contact">CONTACT</a>
-                <a href="https://github.com/vppelli" target="_blank" class="layout m-lr">
-                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
-                </a>
-                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank" class="layout m-lr">
-                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
-                </a>
-                <a href="https://www.artstation.com/mpietros" target="_blank" class="layout m-lr">
-                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
-                </a>
-                <a href="https://medium.com/@vppelli" target="_blank" class="layout m-lr">
-                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
-                </a>
-                <a class="btn btn-flipped" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">RESUME</a>
-            </div>
-        </div>
+            </footer>
+        </main>
     </div>
 
     <script src="./js/main.mini.js"></script>
