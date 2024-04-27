@@ -650,7 +650,7 @@ button:hover,
 }
 
 .tag {
-  background-color: var(--font-color);
+  background-color: var(--bg-switch);
   color: var(--font-color-alt);
   border-radius: 2px;
   padding: 0px 12px;
