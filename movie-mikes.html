@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Showcase - MovieMikes</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.mini.css">
+
+</head>
+
+<body>
+    <div class="transition transition-1 is-active"><span class="title m-tb">MICHAEL PIETROSKI</span></div>
+
+    <div class="flex-layout jc">
+        <nav class="profile-sidebar sticky-block" id="full">
+            <div class="button-layout">
+                <a onclick="hideSidebar()" class="arrow">
+                    <img src="./img/expand.svg" alt="Collapse button" class="btn btn-flipped">
+                </a>
+                <a class="btn" href="https://github.com/vppelli/chat-app">GITHUB</a>
+                <a class="btn page" href="./#work">BACK</a>
+            </div>
+            <h1 class="m-lr">MICHAEL PIETROSKI</h1>
+            <img src="https://avatars.githubusercontent.com/u/138417934?v=4" alt="Michael Pietroski's Portrait"
+                class="profile-img">
+            <h2 style="text-align: center;">FULL STACK DEVELOPER '& <span class="accent">3D ARTIST</span></h2>
+            <div class="button-layout">
+                <a class="btn" href="mailto:mpworkplace@gmail.com">EMAIL</a>
+                <a class="btn" href="tel:+19736527269">CALL</a>
+            </div>
+            <div class="icon-layout">
+                <a href="https://github.com/vppelli" target="_blank">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
+                </a>
+            </div>
+            <div class="button-layout">
+                <a class="btn" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">DOWNLOAD RESUME</a>
+            </div>
+        </nav>
+        <nav class="mini-sidebar sticky-block is-hidden" id="mini">
+            <div class="button-sideways-layout">
+                <a onclick="showSidebar()" class="arrow m-lr">
+                    <img src="./img/expand.svg" alt="Expand button" class="btn btn-flipped">
+                </a>
+                <a class="btn btn-flipped" href="https://github.com/vppelli/chat-app">GITHUB</a>
+                <a class="btn btn-flipped page" href="./#work">BACK</a>
+                <a href="https://github.com/vppelli" target="_blank">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="layout">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon">
+                </a>
+                <a class="btn btn-flipped" href="./files/Pietroski-Michael-Resume.pdf" target="_blank">RESUME</a>
+            </div>
+        </nav>
+        <main class="flex-content">
+            <div class="flex-description layout p-lr">
+                <h1 class="title p-tb">MOVIE<span class="f-outline">MIKES</span></h1>
+            </div>
+            <div class="flex-layout collapse p-lr">
+            </div>
+            <div class="button-layout layout p-lr">
+                <a href="https://github.com/vppelli/movie_client" target="_blank" class="btn title"
+                    style="background-color: #B9C6AE; flex-grow: 2; height: auto;">
+                    GITHUB
+                </a>
+                <a href="./#work" class="btn title page" style="background-color: #8A95A5; height: auto;">
+                    BACK
+                </a>
+            </div>
+            <footer class="flex-layout footer">
+                <div class="flex-description p-lr m-tb" style="max-width: 300px;">
+                    <p class="switch">
+                        Michael Pietroski<br>
+                        Newark, NJ
+                    </p>
+                    <a href="tel:+19736527269">Phone</a>
+                    <a href="mailto:mpworkplace@gmail.com">Email</a>
+                </div>
+                <a href="https://github.com/vppelli" target="_blank" class="m-tb">
+                    <img src="./img/github-icon.svg" alt="Github" class="btn btn-icon icon">
+                </a>
+                <a href="https://www.linkedin.com/in/michaelpietroski/" target="_blank" class="m-tb">
+                    <img src="./img/linkedin-icon.svg" alt="Linkedin" class="btn btn-icon icon">
+                </a>
+                <a href="https://www.artstation.com/mpietros" target="_blank" class="m-tb">
+                    <img src="./img/artstation-icon.svg" alt="Art station" class="btn btn-icon icon">
+                </a>
+                <a href="https://medium.com/@vppelli" target="_blank" class="m-tb">
+                    <img src="./img/medium-icon.svg" alt="Medium" class="btn btn-icon icon">
+                </a>
+            </footer>
+        </main>
+    </div>
+
+    <script src="./js/main.mini.js"></script>
+</body>
+
+</html>
