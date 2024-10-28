@@ -84,15 +84,188 @@
                     <h2>OVERVIEW</h2>
                     <p>
                         Welcome to the Recipe App! This web application provides information about different Recipes,
-                        ingredients, and difficulty. Users can sign up, upload their personal recipes, and view or update a list
-                        of recipes. I use PostgreSQL to store lists of Recipes, Ingredients, and Images. Simple and understandable, 
-                        using Django on Python to provide a responsive application for all users.
+                        ingredients, and difficulty. Users can sign up, upload their recipes, and view or update a list
+                        of recipes. I use PostgreSQL to store lists of Recipes, Ingredients, and Images. Simple and
+                        understandable, using Django on Python to provide a responsive application for all users.
                     </p>
                     <h2>OBJECTIVE</h2>
                     <p>
+                        Using React, build the client-side for MovieMike based on its existing server-side code (Movie
+                        API and database). Integrate features that allow account creation, and access to film
+                        information such as genres, directors, and similar films. Give the ability to customize a list
+                        of favorite movies that they can add or remove anytime.
                     </p>
                     <h2>TOOLS</h2>
                     <p>
+                        Python, Django, JavaScript, HTML, CSS
+                    </p>
+                </div>
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-bg.png">
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr flip">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-design.png"
+                        style="width: 100%; max-width: 95%; margin-bottom: 15px;">
+                    <h2>DESIGN</h2>
+                    <p>
+                        Many Recipe app-related websites are noisy and difficult to navigate. Users often struggle to
+                        find specific information about Recipes, and ingredients, including quality-of-life improvements
+                        such as difficulty recommendations.<br>
+                        I referenced the most popular websites. A home page that presents all needed navigations.
+                        Something that users are familiar with and can be improved upon freely.
+                    </p>
+                    <p>
+                        With the Search function at the bottom of the screen, users will always have quick access on
+                        mobile. Desktop and computer viewing also use the same layout. Allowing scrolling through
+                        recipes and searching from the bottom when scrolling.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr flip">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-about.png">
+                </div>
+                <div class="flex-description m-tb">
+                    <p>
+                        Users can click on an image of a recipe and be redirected to its enlarged page. I designed this
+                        area to present the recipe image on the background with a title and bio followed by a difficulty
+                        tag on the right, keeping the ingredients used at the bottom.
+                    </p>
+                    <p>
+                        At the bottom under ingredients, you can interact with the edit button to fix or update that
+                        recipe.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description m-tb">
+                    <h2>CLIENT SIDE</h2>
+                    <p>
+                        MovieMike was made using React.js. I took advantage of React.js's virtual DOM and efficient
+                        rendering contributed to a fast and smooth user experience. When you have a web application that
+                        holds many movies and information about each movie, you will benefit from a quick and smooth
+                        experience.
+                    </p>
+                    <h3>ACCESSIBILITY</h3>
+                    <p>
+                        MovieMike adapts to different screen sizes, ensuring a seamless experience on desktops, tablets,
+                        and mobile devices.
+                        The application prioritizes intuitive navigation, making it easy for users to find what they are
+                        looking for.
+                    </p>
+                    <p>
+                        MovieMike also has a tab to learn more about each genre and director.
+                    </p>
+                </div>
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-responsive.png">
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr flip">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-user.png">
+                </div>
+                <div class="flex-description m-tb">
+                    <h2>USER ACCOUNT</h2>
+                    <p>
+                        Users can create an account with a simple registration process, providing their email address,
+                        username, and a secure password. Users can update their profile, including their username,
+                        email, birthdate, and password ensuring information is accurate and up-to-date.
+                    </p>
+                    <p>
+                        MovieMike offers users complete control over their data. Users can choose to delete their
+                        account, permanently removing their information from the platform.
+                    </p>
+                    <h2>FAVORITE LIST</h2>
+                    <p>
+                        Favorite lists help users keep track of their desired movies, making it easier to plan their
+                        next movie night.
+                    </p>
+                    <p>
+                        Adding movies to the favorites list is as simple as clicking a "bookmark" icon on a movie's
+                        details page.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description m-tb">
+                    <h2>BACKEND</h2>
+                    <p>
+                        The Server-side component of MovieMike provides endpoint access to information about different
+                        movies, directors, and genres. This also includes user login, sign-up, and user information.
+                        Must be the same user to view information.
+                    </p>
+                    <p>
+                        The modular design of the API facilitates easy maintenance and updates, ensuring a smooth
+                        development process.
+                    </p>
+                    <h3>SERVER AND DATABASE</h3>
+                    <p>
+                        MovieMike API uses a Node.js, MongoDB, and JavaScript. JavaScript code sends an API request to
+                        the Node.js server to receive the request, process it, and interact with the MongoDB database to
+                        retrieve or update data.
+                    </p>
+                    <p>
+                        MongoDB's NoSQL nature provides flexibility in handling diverse data structures and evolving
+                        requirements.
+                    </p>
+                    <a href="https://github.com/vppelli/movie_api" target="_blank" class="btn"
+                        style="background-color: rgb(190, 147, 30); height: auto; width: 200px;">
+                        API GITHUB
+                    </a>
+                </div>
+                <div class="flex-description m-tb">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-api.png">
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr flip">
+                <div class="flex-description">
+                    <img class="img-box" src="./img/code-img/movie-app/movie-app-postman.png">
+                </div>
+                <div class="flex-description m-tb">
+                    <h2>TESTING</h2>
+                    <p>
+                        Postman allowed me to test individual API endpoints, ensuring they function correctly and return
+                        the expected data. Postman helped me identify and address potential errors in the API, ensuring
+                        a robust and reliable system.
+                    </p>
+                    <h2>CHALLENGES</h2>
+                    <p>
+                        Most of the MovieMike challenges came from learning how to set up the component views that would
+                        present crucial information about movies. Another challenge was learning Bootstrap and how to
+                        take full advantage of its pre-created class
+                        tags.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description m-tb">
+                    <h2>LOOKING BACK</h2>
+                    <p>
+                        MovieMike is a React JS-based application that provides a user-friendly platform for movie
+                        discovery. By leveraging the power of React.js and MovieMike database API, MovieMike offers a
+                        focus on user experience, recommendations of similar movies, and a way to personalize your
+                        favorites anytime.
+                    </p>
+                    <p>
+                        I achieved all primary and side objectives, making the MovieMike user-friendly and informative.
+                    </p>
+                    <p>
+                        Next time, I want to improve the user interface, currently it's very plain, with small issues on
+                        sizing. It would help improve the user experience and make the application more cozy. Other
+                        minor changes would be adding font resizing and dark mode and light mode toggles.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-layout collapse p-lr">
+                <div class="flex-description m-tb">
+                    <h4>CREDITS</h4>
+                    <p>
+                        Lead Developer: Michael Pietroski<br>
+                        Tutor: Rylan Albach<br>
+                        Mentor: Trey Fletcher
                     </p>
                 </div>
             </div>
