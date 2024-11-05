@@ -363,6 +363,9 @@ button:hover,
 .accent {
     color: var(--accent);
 }
+.btnt {
+    filter: var(--bg-filter);
+}
 
 /* Screen Sizes -------------------------------------- */
 @media all and (max-width: 375px) {
@@ -574,6 +577,7 @@ button:hover,
         --accent: rgb(111, 71, 255);
         /* Background Color */
         --bg-color: rgb(214, 214, 214);
+        --bg-filter: invert(10%) sepia(37%) saturate(11%) hue-rotate(322deg) brightness(100%) contrast(86%);
         /* birghter */
         --bg-color-1: rgb(220, 220, 220);
         --bg-color-2: rgb(230, 230, 230);
@@ -590,6 +594,7 @@ button:hover,
         --accent: rgb(111, 71, 255);
         /* Background Color */
         --bg-color: rgb(41, 41, 41);
+        --bg-filter: invert(94%) sepia(0%) saturate(1%) hue-rotate(217deg) brightness(94%) contrast(85%);
         /* birghter */
         --bg-color-1: rgb(50, 50, 50);
         --bg-color-2: rgb(60, 60, 60);
